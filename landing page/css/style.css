@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:#f7f7ff;
+}
+main {
+    margin:1rem;
+    margin-bottom:0;
+}
+header {
+    display:grid;
+    max-width:100%;
+    margin-left:2rem;
+}
+.logo {
+    max-width: 150px;
+    margin-left:0rem;
+}
+section {
+    display:block;
+    margin:2rem;
+}
+h1 {
+    font-family: 'montserrat-bold', sans-serif;
+    font-size: 6rem;
+    margin-top:0;
+    margin-bottom: 0;
+}
+.p1 {
+    font-family: 'montserrat-light', sans-serif;
+    font-size:2.1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form {
+    border:1px;
+    border-radius: 30px;
+    box-shadow: 1px 5px 5px 5px lightgray;
+    background-color: white;
+    height:auto;
+    margin-top:1rem;
+}
+h2 {
+    display:inline-block;
+    margin:2.5rem;
+    font-size:3.25rem;
+    font-family:'montserrat-bold', sans-serif;
+    margin-bottom: 0;
+    margin-top:2rem;
+}
+.p2desk {
+    display: none;
+}
+.p2 {
+    margin-left:2.5rem;
+    font-size:1.23rem;
+    font-family: 'montserrat-thin',sans-serif;
+    margin-bottom:0.75rem;
+    margin-top:1rem;
+}
+.contact-form {
+    display:flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.contact-form-input {
+    margin-right:2.5rem;
+    width:100%;
+    font-size:1rem;
+    line-height: 2.5rem;
+    margin-bottom:1rem;
+    font-family:'montserrat-thin', sans-serif;
+    background-color: #eeeeee;
+    border:none;
+    border-radius: 10px;
+}
+
+.checkboxlabel {
+    display:inline-block;
+    font-size:1.25rem;
+    margin-left:0.5rem;
+    font-family: 'montserrat-thin', sans-serif;
+    position: absolute;
+}
+#checkbox {
+    width:1.5rem;
+    height:1.5rem;
+    border-radius: 15%;
+    cursor: pointer;
+}
+.greenbutton {
+    display: block;
+    text-align: center;
+    font-family: 'montserrat-light',sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 4rem;
+    margin-top: 1rem;
+    background-color: #57eeab;
+    color: #333131;
+    border:none;
+    border-radius: 15px;
+}
+.p3 {
+    display: inline-block;
+    margin-left: 2.5rem;
+    font-family: 'montserrat-thin', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.link1:link,
+.link1:visited {
+    text-decoration: none;
+    color:#ff8480;
+}
+
+footer {
+    background-color: #fffd8c;
+    margin:-1rem;
+    margin-top: 3rem;
+}
+h3 {
+    display: inline-block;
+    margin-left:2.5rem;
+    margin-top:2rem;
+    margin-right: 2.5rem;
+    font-family: 'montserrat-light', sans-serif;
+    font-size: 2rem;
+    margin-bottom:0;
+}
+
+.p4 {
+    margin-left: 2.5rem;
+    margin-right: 2rem;
+    font-size:1.5rem;
+    font-family: 'montserrat-thin', sans-serif;
+}
+.footer-form {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.hours {
+    width:25%;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    border-radius: 10px;
+    border:none;
+    background-color: #f7f7ff;
+    font-family: 'montserrat-thin', sans-serif;
+}
+.city {
+    width:70%;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    border-radius: 10px;
+    border:none;
+    background-color: #f7f7ff;
+    font-family: 'montserrat-thin', sans-serif;
+
+}
+.redbutton {
+    flex-basis: 100%;
+    display: inline-block;
+    font-size:2rem;
+    font-family: 'montserrat-light',sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    border:none;
+    background-color:#ff8480;
+    line-height: 3.5rem;
+    color:#f7f7ff;
+    margin-top:1rem;
+    margin-bottom: 2.5rem;
+}
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width:550px) {
+    .bgimage {
+        margin-top:-2rem;
+    }
+    .footer-form {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .form-group {
+        flex-basis: 50%;
+    }
+    .redbutton {
+        margin-left: 1rem;
+        margin-top:0;
+        flex-basis: 50%;
+    }
+    .hours, .city {
+        max-height:60%;
+    }
+    .social {
+        justify-content: space-evenly;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+}
+
+@media (min-width:1000px) {
+    .logo {
+        width:80px;
+        margin-left:5%;
+        margin-top:-0.5rem;
+    }
+    .bgimage {
+        display: none;
+    }
+   body {
+       background-image: url(../images/bg-image/scooter.svg);
+       background-repeat: no-repeat;
+       background-size: 40%;
+       background-position: center;
+   }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        grid-gap:15rem;
+        margin-top: 3rem;
+    }
+    .text {
+        margin-left:auto;
+        margin-right: auto;
+        margin-top:0;
+        max-width:75%;
+    }
+    h1 {
+        font-size:4rem;
+    }
+    .p1 {
+        font-size:1rem;
+        font-family: 'montserrat-thin', sans-serif;
+    }
+    .form {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:0;
+        max-width:75%;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .p2 {
+        display: none;
+    }
+    .p2desk {
+        display: inline-block;
+        margin-left: 2.5rem;
+        font-family: 'montserrat-thin', sans-serif;
+    }
+    .contact-form-input {
+        font-size: 1rem;
+    }
+    .checkboxlabel {
+        font-size: 1rem;
+    }
+    #checkbox {
+        width:15px;
+        height:15px;
+    }
+    .greenbutton {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        border-radius: 5px;
+    }
+    .p3 {
+        font-size: 0.75rem;
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .footer {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .footer-section1 {
+        margin-left:3.5rem;
+    }
+    h3 {
+        font-size:1.5rem;
+        font-weight: normal;
+    }
+    .p4 {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    .hours, .city {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        max-height: 40%;
+        border-radius: 5px;
+    }
+    .redbutton {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        border-radius: 5px;
+    }
+    .social {
+        justify-content: center;
+        align-self: center;
+        margin-top:1rem;
+    }
+    .tw,.fb,.li {
+        margin-left: 2rem;
+    }
+}
