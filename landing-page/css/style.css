@@ -34,6 +34,7 @@ h1 {
     font-size: 6rem;
     margin-top:0;
     margin-bottom: 0;
+    color:#333131;
 }
 /* I chose 'montserrat-bold' for h1*/
 .p1 {
@@ -150,6 +151,7 @@ h3 {
     font-family: 'montserrat-light', sans-serif;
     font-size: 2rem;
     margin-bottom:0;
+    color:#333131;
 }
 /*I used lots of margin to try to make the space looks close to the mockup page, margin-left and right 2.5rem to make it center*/
 
@@ -314,7 +316,7 @@ h3 {
     /*I set the width of the div to 75% so spacing looks similar to the mockup page. The margin-left and right: auto to set the .text center in the space*/
 
     h1 {
-        font-size:4rem;
+        font-size:4.25rem;
     }
     /*I changed the font-size smaller on every element because the font size seems smaller on the mockup page.*/
 
