@@ -3,7 +3,7 @@
 <head>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/font.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet"><!--I putted all the fonts in one css style sheet-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
@@ -12,8 +12,9 @@
     <main>
         <header class="banner">
             <img class="logo" src="images/logo/logo.png" alt="logo">
+            <!--This is the logo, I chose the png file, because the photo quality is better-->
         </header>
-        <section class="container">
+        <section class="container"><!--This is the body content of the page-->
             <div class="text">
                 <h1>
                     Want to be Your Own boss?
@@ -23,11 +24,13 @@
                 </p>
             </div>
             <img class="bgimage" src="images/bg-image/scooter.svg" alt="bgimage">
+            <!--I chose to add the background image here because the position and the size of the image looks more similar to the mock up page than background-image in css style sheet.-->
             <div class="form">
                     <h2>Apply Now</h2>
                     <p class="p2">
                         Enter your info below.
                     </p>
+                    <!--I added the p2 and p2desk because the mock up showed that the desktop view have 'to get started', and it's not on the tablet and mobile view.-->
                     <p class="p2desk">
                         Enter your info below to get started.
                     </p>
@@ -43,6 +46,7 @@
                         <button class="greenbutton" type="submit">DRIVE WITH US</button>
                     </form>
                     <p class="p3">Already applied? <a href="#" class="link1">Check your application status here</a></p>
+                    <!--I putted a anchor inside to make the 'check your application' a working link-->
                 </div>
             </div>
         </section>
@@ -55,6 +59,7 @@
                         <input class="hours" type="text" id placeholder="Hours" name="hours">
                         <input class="city" type="text" id placeholder=" City" name="city">
                     </div>
+                    <!--I put these two inputs in a div, learned from the lecture video, so these two inputs will stay in one line when add flex-wrap on css.-->
                     <button class="redbutton" type="submit">
                         CALCULATE
                     </button>
@@ -66,6 +71,7 @@
                 <img class="fb" src="images/icons/facebook.svg" alt="facebook">
                 <img class="li" src="images/icons/linkedin.svg" alt="linkedin">
             </div>
+            <!--I put these four icons in a div becuase it's easier to align them with flex.-->
         </footer>
     </main>
 </body>
