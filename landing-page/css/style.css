@@ -287,15 +287,11 @@ h3 {
     }
     /*I hide the background color so I can use the background-image attribute to add a background image*/
 
-   body {
-       background-image: url(../images/bg-image/scooter.svg);
-       background-repeat: no-repeat;
-       background-size: 40%;
-       background-position: center;
-   }
-   /*I add the background image using css attribute because on the desktop view it's easier to position the image, I also set the size to 40% so the spacing looks close to the mock up page.*/
-
     section {
+        background-image: url(../images/bg-image/scooter.svg);
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-position: center top;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 1fr;
@@ -303,6 +299,7 @@ h3 {
         margin-top: 3rem;
     }
     /*I used grid to align the text and the form.*/
+    /*I add the background image using css attribute because on the desktop view it's easier to position the image, I also set the size to 40% so the spacing looks close to the mock up page. and I add the background image into the section instead of body because the position looked more close compare to the ock up page.*/
 
     .text {
         margin-left:auto;
@@ -318,7 +315,7 @@ h3 {
     /*I changed the font-size smaller on every element because the font size seems smaller on the mockup page.*/
 
     .p1 {
-        font-size:1rem;
+        font-size:1.25rem;
         font-family: 'montserrat-thin', sans-serif;
     }
     .form {
