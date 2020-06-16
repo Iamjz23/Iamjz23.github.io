@@ -233,7 +233,9 @@ h3 {
 }
 .fb {
     grid-area: three;
+    border-radius: 50%;
 }
+/*I used border radius to make the logo round.*/
 .li {
     grid-area: four;
 }
@@ -432,5 +434,9 @@ h3 {
         margin-left:2.5rem;
     }
     /*Margin-left on every icons to space between each icons.*/
+    .fb {
+        border-radius: 0%;
+    }
+    /*I added a border-radius: 0% to change the icon back to a square*/
 }
 /*The css page is validated by the css validator*/
