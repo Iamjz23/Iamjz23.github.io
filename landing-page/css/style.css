@@ -387,6 +387,8 @@ h3 {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
     /*I used flex to set the content and the icons at the same horizontal line*/
 
