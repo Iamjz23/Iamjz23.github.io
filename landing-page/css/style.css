@@ -36,7 +36,7 @@ h1 {
     margin-bottom: 0;
     color:#333131;
 }
-/* I chose 'montserrat-bold' for h1*/
+
 .p1 {
     font-family: 'montserrat-light', sans-serif;
     font-size:2.1rem;
@@ -81,7 +81,7 @@ h2 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
 }
-/*I used flex so i can change the width of the inputs and the button easily, and margin-left, and right 2.5 to set the content in center.*/
+/*I used flex so i can change the width of the inputs and the button easily, and margin-left,right 2.5 to set the content in center.*/
 
 .contact-form-input {
     width:100%;
@@ -89,7 +89,7 @@ h2 {
     line-height: 2.5rem;
     margin-bottom:1rem;
     font-family:'montserrat-thin', sans-serif;
-    background-color: #eeeeee;/*this is the ligest grey i can find to match the mockup*/
+    background-color: #eeeeee;/*this is the lightest grey i can find to match the mockup*/
     border:none;
     border-radius: 10px;
 }
@@ -235,7 +235,7 @@ h3 {
     grid-area: three;
     border-radius: 50%;
 }
-/*I used border radius to make the logo round.*/
+/*I used border radius to make the logo icon round.*/
 .li {
     grid-area: four;
 }
@@ -245,7 +245,7 @@ h3 {
     .bgimage {
         margin-top:-2rem;
     }
-    /*I added a margin here to make spacing of the background image looks close enough as the mockup page*/
+    /*I added a negative margin here to make spacing of the background image looks close enough as the mockup page*/
 
     .p3 {
         font-size: 1rem;
@@ -428,8 +428,8 @@ h3 {
         grid-template-areas: 
         "one two three four";
     }
-
     /*I reordered the icons using grid area, because the order of the icons on the desktop view changed.*/
+    
     .ig, .tw, .fb, .li {
         margin-left:2.5rem;
     }
