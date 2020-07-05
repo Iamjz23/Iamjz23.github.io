@@ -13,6 +13,12 @@ body {
     font-family: 'Yellowtail', cursive;
     font-size:2rem;
     margin-bottom: 1rem;
+    color:black;
+}
+.home-header a:link,
+.home-header a:active {
+    color:black;
+    text-decoration: none;
 }
 .headernav {
     margin:0.5rem;
@@ -58,6 +64,8 @@ body {
     font-size:1.2rem;
     padding-bottom:2rem;
     font-weight: bold;
+    margin-left:1rem;
+    margin-right:1rem;
 }
 
 .banner h2 {
@@ -275,12 +283,165 @@ footer p{
         margin-left:3.5rem;
         margin-right:3.5rem;
     }
-   
+}
+
+@media (min-width:1280px) {
+    .home-header {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo {
+        margin-left:2.5rem;
+
+    }
+    .headernav {
+        align-self: flex-end;
+        width:30%;
+        margin-right:2.5rem;
+    }
+    .home-section {
+        margin-left:5.5rem;
+        margin-right:5.5rem;
+        display:grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        "two one one"
+        "two three four"
+        "five five four";
+    }
+    .banner {
+        margin-left:5rem;
+        margin-right:5rem;
+    }
+    .s1 {
+        grid-area: one;
+        margin-bottom:0;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom:3px solid black;
+    }
+    .s2 {
+        grid-area: two;
+        display: flex;
+        flex-direction: column;
+        margin-bottom:0;
+        justify-content: flex-end;
+        border-right:3px solid black;
+        white-space: none;
+    }
+    .s3 {
+        display: block;
+        grid-area: three;
+    }
+    .s4 {
+        grid-area: four;
+        display: flex;
+        flex-direction: column;
+        margin-bottom:0;
+        justify-content: flex-start;
+        border-left:3px solid black;
+    }
+    .s5 {
+        grid-area: five;
+        margin-bottom:0;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top:3px solid black;
+    }
+    .home-section img {
+        border:none;
+        margin:0.5rem;
+    }
+    .s1 img, .s5 img {
+        max-width:90%;
+    }
+    .s2 img, .s4 img {
+        max-width:100%;
+        max-height:100%;
+    }
+    .home-section h3 {
+        font-size:1.5rem;
+    }
+    .home-section p {
+        font-size:1rem;
+    }
+    .s1-content {
+        border:none;
+        margin-top:1rem;
+    }
+    .s2-content {
+        border:none;
+        margin-bottom: 1rem;
+    }
+    .s4-content {
+        border:none;
+        display:block;
+        margin-top:1rem;
+    }
+    .s5-content {
+        border:none;
+        margin-top:1rem;
+    }
+    .s3 {
+        margin:auto;
+        font-family: 'Parisienne', cursive;
+        font-size:2rem;
+        margin-right:2.5rem;
+        margin-left:2.5rem;
+        text-align:center;
+        color:black;
+    }
+    .s3 .s3p a:link,
+    .s3 .s3p a:active {
+        text-decoration: none;
+        color:black;
+    }
+    .s3 .s3p a:hover,
+    .s3 .s3p a:visited {
+        text-decoration: none;
+        color:black;
+    }
+
+    @keyframes hover {
+        100% {
+          transform: translate(0, -15px); 
+        }
+      }
+      
+      .social img:hover {
+        animation-name:hover;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
         
+      }
+      @keyframes rotate {
+        50% {
+          transform:rotatey(180deg);
+        }
+      }
+      .s3 .s3p {
+        animation-name: rotate;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes up {
+        50% {
+          transform:translate(0,-15px);
+        }
+      }
+      .gototop {
+        animation-name: up;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+      }
+
+
     
-
-  
-
 
 }
 
