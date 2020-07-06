@@ -697,7 +697,6 @@ textarea {
         margin-bottom:0;
         justify-content: flex-end;
         border-right:3px solid black;
-        white-space: none;
     }
     .s3 {
         display: block;
@@ -922,7 +921,7 @@ textarea {
     }
     .gellary img:active {
         animation-name: grow;
-        animation-duration: 0;
+        animation-duration: initial;
     }
     
     /*Contact page start here*/
