@@ -305,7 +305,7 @@ footer p{
 .gellary img {
     max-width: 100%;
     margin-bottom:2rem;
-    border:2px coral inset;
+    border:2px #d4af37 outset;
 }
 .gellary .g9 {
     margin-bottom:0;
