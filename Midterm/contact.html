@@ -1,10 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nanum+Myeongjo:wght@700&family=Parisienne&family=Playfair+Display:wght@400;500&family=Yellowtail&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Contact - Jz Creative Company</title>
 </head>
 <body>
+    <header class="home-header">
+		<a href="index.html"><p class="logo">Jz creative Company</p></a>
+		<nav class="headernav">
+                <div class="home"><a class="active" href="index.html">Home</a></div>
+				<div class="about"><a href="about.html">About Us</a></div>
+				<div class="contact"><a href="contact.html">Contact Us</a></div>
+        </nav>
+    </header>
+    <div class="contact-banner">
+        <h1>Contact Us</h1>
+        <h2>Follow Us on Social Media</h2>
+            <div class="social">
+                <a href="#"><img class="ig" src="img/icons/instagram.svg" alt="instagram"></a>
+                <a href="#"><img class="tw" src="img/icons/twitter.svg" alt="twitter"></a>
+                <a href="#"><img class="fb" src="img/icons/facebook.svg" alt="facebook"></a>
+                <a href="#"><img class="li" src="img/icons/linkedin.svg" alt="linkedin"></a>
+            </div>
+    </div>
+    <div class="arrow">&#65086;</div>
+    <section class="contact-section">
+        <div class="mapgroup">
+            <h2>Our Location</h2>
+            <div class="map">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179164.40801495002!2d-75.74695303296511!3d45.440710771397356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce071f7456d2f5%3A0x76a168a961041a23!2sAlgonquin%20College%20-%20Building%20F!5e0!3m2!1sen!2sca!4v1594002736134!5m2!1sen!2sca" width="2000" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+        <div class="contactinfo">
+            <h1>Jz Creative Company Ottawa</h1>
+            <p>Building F, Unit-208</p>
+            <p>208-111 Ottawa Street</p>
+            <p>Ottawa, ON K1A1A1</p>
+            <p>Contact Name: Tianyi Zhang</p>
+            <P>Phone: +1(123)613-5678</P>
+            <p>Fax: 111-111-1111</p>
+        </div>
+        <form class="contact-form">
+            <h2>Contact Us</h2>
+            <fieldset>
+                <legend>Personal Information&nbsp;</legend>
+                <label for="fname">First Name</label>
+                <input class="contact-form-input" type="text" id="fname" placeholder=" First name" name="fname">
+                <label for="lname">Last Name</label>
+                <input class="contact-form-input" type="text" id="lname" placeholder=" Last name" name="lname">
+                <label for="phone">Phone Number</label>
+                <input class="contact-form-input" type="text" id="phone" placeholder=" Phone number" name="phone">
+                <label for="email">E-mail</label>
+                <input class="contact-form-input" type="text" id="email" placeholder=" Email address" name="email">
+            </fieldset>
+            <fieldset class="message">
+                <legend>Tell Us More&nbsp;</legend>
+                <div>
+                    <textarea name="message" id="message" placeholder=" Message"></textarea>
+                </div>
+            </fieldset>
+            <button class="contact-button" type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <nav class="footernav">
+            <div class="home"><a class="active" href="index.html">Home</a></div>
+            <div class="about"><a href="about.html">About Us</a></div>
+            <div class="contact"><a href="contact.html">Contact Us</a></div>
+        </nav>
+        <div class="footer-p2">
+            <div class="gototop">
+                <a href="#top">&#8679;</a>
+            </div>
+            <div class="footer-social">
+                <h2>Follow Us on Social Media</h2>
+                <div class="footer-icon">
+                    <a href="#"><img class="ig" src="img/icons/instagram.svg" alt="instagram"></a>
+                    <a href="#"><img class="tw" src="img/icons/twitter.svg" alt="twitter"></a>
+                    <a href="#"><img class="fb" src="img/icons/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img class="li" src="img/icons/linkedin.svg" alt="linkedin"></a>
+                </div>
+            </div>
+        </div>
+		<p>Copyright &copy; Jz Creative Company 2020</p>
+    </footer>
 </body>
 </html>
