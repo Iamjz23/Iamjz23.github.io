@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #f2f2f2;
+    background-color: #FCF6E8;
 }
 .arrow {
     display: none;
@@ -10,74 +10,98 @@ body {
 /*Home Page start here*/
 .home-header {
     display:grid;
-    background-color: #e8e8e8;
+    background-color: black;
 }
-.logo {
-    text-align:center;
-    font-family: 'Yellowtail', cursive;
-    font-size:2rem;
-    margin-bottom: 1rem;
-    color:black;
+
+.logo{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0.5rem;
 }
-.home-header a:link,
-.home-header a:active {
-    color:black;
-    text-decoration: none;
+.logoimg {
+    max-width:180px;
 }
-.headernav {
-    margin:0.5rem;
-}
-.headernav .home, .headernav .about,.headernav .contact {
+
+.headernav .home {
     text-align:center;
     line-height: 3rem;
-    border: 1px solid #d4af37;
-    margin-bottom:1px;
     border-radius: 6px;
     font-family:'Courgette', cursive;
     font-size:1.5rem;
-    color: black;
-    background-color:white;
+    color: #b10f0f;
+    background-color:#343333;
+
+}
+.headernav .about {
+    text-align:center;
+    line-height: 3rem;
+    border-radius: 6px;
+    font-family:'Courgette', cursive;
+    font-size:1.5rem;
+    color: #b10f0f;
+    background-color:#575555;
+}
+.headernav .contact {
+    text-align:center;
+    line-height: 3rem;
+    border-radius: 6px;
+    font-family:'Courgette', cursive;
+    font-size:1.5rem;
+    color: #b10f0f;
+    background-color:#767575;
 }
 
 .headernav div a:link,
 .headernav div a:visited {
-    color: #d4af37;
+    color: #b10f0f;
     text-decoration: none;
 }
 
+.headernav div a:hover,
+.headernav div a:active {
+    color: #d4af37;
+    font-size:2rem;
+}
 .banner {
-    background-image: url(../img/4.jpg);
+    display:flex;
+    flex-wrap: wrap;
+    margin:0.5rem;
+}
+.bannergroup {
+    display:flex;
+    flex-direction: row;
+    flex-basis:100%;
+}
+.banner1 {
+    background-image: url(../img/h4.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     opacity: 90%;
-    margin:0.5rem;
+    flex-basis: 100%;
+    border-bottom:3px solid #FCF6E8;
 }
 
 .banner h1 {
     font-family: 'Courgette', cursive;
     text-align: center;
-    color:#d4af37;
-    padding-top:3rem;
+    padding-top:6rem;
+    padding-bottom:3rem;
     margin-left:1rem;
     margin-right:1rem;
+    color:#b10f0f;
 }
-.banner p {
-    font-family: 'Parisienne', cursive;
-    text-align:center;
-    color:#d4af37;
-    font-size:1.2rem;
-    padding-bottom:2rem;
-    font-weight: bold;
-    margin-left:1rem;
-    margin-right:1rem;
-}
+
 
 .banner h2 {
     color:#d4af37;
     text-align:center;
     font-family: 'Yellowtail', cursive;
 }
-
+.banner h1 a:link,
+.banner h1 a:visited {
+    color:#b10f0f;
+    text-decoration: none;
+}
 .social {
     display:flex;
     justify-content: center;
@@ -91,18 +115,74 @@ body {
     margin-right:1.5rem;
 }
 
+.banner2 {
+    background-image: url(../img/h5.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 90%;
+    flex-basis: 50%;
+    border-right:3px solid #FCF6E8;
+}
+
+.banner3 {
+    background-image: url(../img/h2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 90%;
+    flex-basis: 50%;
+}
+.store {
+    margin:0.5rem;
+    margin-top: 5rem;
+    margin-bottom:5rem;
+    
+}
+.storeimg {
+    max-width:100%;
+    border:2px solid black;
+}
+.storetext h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:2rem;
+}
+.storetext {
+    text-align:center;
+    max-width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.storetext p {
+    padding:1rem;
+    font-family: 'Courgette', cursive;
+    border-left:2px solid black;
+    border-right:2px solid black;
+}
+.storetext .ab-button {
+    border:1px solid black;
+    border-radius:15px;
+    font-size:1rem;
+    background-color: black;
+    line-height:2rem;
+    font-family: 'Courgette', cursive;
+
+}
+.storetext .ab-button a:link,
+.storetext .ab-button a:visited {
+    color:#d4af37;
+    text-decoration: none;
+}
 .home-h2 {
     font-family: 'Yellowtail', cursive;
     text-align:center;
     font-size:2rem;
     margin-top:3rem;
 }
+
 .home-section {
     margin:0.5rem;
 }
 img {
     max-width: 100%;
-    border:1px solid black;
 }
 
 .s1,.s2,.s4,.s5 {
@@ -117,6 +197,12 @@ img {
 }
 .home-section p {
     font-family: 'Courgette', cursive;
+    text-align:center;
+    max-width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    border-left:2px solid black;
+    border-right:2px solid black;
 }
 
 .home-section button {
@@ -188,7 +274,7 @@ footer p{
 
 /*About Page start here*/
 .about-banner {
-    background-image: url(../img/6.jpg);
+    background-image: url(../img/h1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin:0.5rem;
@@ -197,7 +283,7 @@ footer p{
 .about-banner h1 {
     font-family: 'Courgette', cursive;
     text-align: center;
-    color:#d4af37;
+    color:#c09f34;
     padding-top:3rem;
     margin-left:1rem;
     margin-right:1rem;
@@ -205,7 +291,7 @@ footer p{
 .about-banner p {
     font-family: 'Parisienne', cursive;
     text-align:center;
-    color:#d4af37;
+    color:#c09f34;
     font-size:1.2rem;
     padding-bottom:2rem;
     font-weight: bold;
@@ -213,7 +299,7 @@ footer p{
     margin-right:1rem;
 }
 .about-banner h2 {
-    color:#d4af37;
+    color:#c09f34;
     text-align:center;
     font-family: 'Yellowtail', cursive;
 }
@@ -267,7 +353,8 @@ footer p{
     margin-right:2rem;
 }
 .persona1, .persona3, .persona5 {
-    background-color: #e8e8e8;
+    background-color: #19385C;
+    color:#d4af37;
 }
 .persona2, .persona4 {
     border-top:1px solid #d4af37;
@@ -313,7 +400,7 @@ footer p{
 
 /*Contact page start here*/
 .contact-banner {
-    background-image: url(../img/12.jpg);
+    background-image: url(../img/h3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display:flex;
@@ -442,7 +529,7 @@ textarea {
     .headernav .home, .headernav .about, .headernav .contact {
         border:0px;
         width:100%;
-        background-color: #e8e8e8;
+        background-color: black;
     }
     .banner {
         margin:2.5rem;
@@ -450,20 +537,39 @@ textarea {
     .banner h1 {
         font-size:2.5rem;
     }
-    .banner p {
-        margin-top:2rem;
-        width:50%;
-        margin-left:auto;
-        margin-right:auto;
-        font-size:1.5rem;
-    }
     .banner h2 {
         font-size:2rem;
         margin-top:-1rem;
     }
+    .store {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:3.5rem;
+    }
+    
+    .storetext h2 {
+        margin-bottom: 1rem;
+    }
+    .storetext p {
+        border:none;
+    }
+    .home1 {
+        flex-basis: 25%;
+    }
+    .home2 {
+        flex-basis: 50%;
+    }
+    .home3 {
+        flex-basis:25%;
+    }
+    .storeimg img {
+        max-width:100%;
+    }
     .home-h2 {
         font-size:2.5rem;
     }
+ 
     .home-section {
         margin: 3.5rem;
         margin-top:2rem;
@@ -479,6 +585,11 @@ textarea {
     }
     .home-section p {
         font-size:1.25rem;
+        max-width:100%;
+        margin:0;
+        border:none;
+        margin-top:1.5rem;
+        margin-bottom:1.5rem;
     }
     .home-section h3 {
         margin-top:0;
@@ -659,6 +770,7 @@ textarea {
         flex-direction: row;
         justify-content: space-between;
     }
+    
     .logo {
         margin-left:2.5rem;
 
@@ -668,6 +780,26 @@ textarea {
         width:30%;
         margin-right:2.5rem;
         margin-bottom:0rem;
+    }
+    .store {
+        flex-direction: row;
+        margin:6rem;
+        background-color: black;
+    }
+    .storeimg {
+        flex-basis: 60%;
+    }
+    .storetext {
+        flex-basis: 35%;
+        color:#d4af37;
+    }
+    .storetext .ab-button {
+        background-color: #d4af37;
+        color:black;
+    }
+    .storetext .ab-button a:link,
+    .storetext .ab-button a:visited {
+        color:black;
     }
     .home-h2 {
         margin-top:3.5rem;
@@ -687,7 +819,26 @@ textarea {
     .banner {
         margin-left:5rem;
         margin-right:5rem;
+        display: flex;
+        flex-direction: row;
     }
+    .banner1 {
+        flex-basis: 70%;
+        border-bottom:none;
+    }
+    .bannergroup {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+        border-left:3px solid #FCF6E8;
+    }
+    .banner2 {
+        border-bottom:1.5px solid #FCF6E8;
+    }
+    .banner3 {
+        border-top:1.5px solid #FCF6E8;
+    }
+
     .s1 {
         grid-area: one;
         margin-bottom:0;
@@ -727,6 +878,7 @@ textarea {
     .home-section img {
         border:none;
         margin:0.5rem;
+        border-radius:5%;
     }
     .s1 img, .s5 img {
         max-width:90%;
