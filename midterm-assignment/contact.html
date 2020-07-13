@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nanum+Myeongjo:wght@700&family=Parisienne&family=Playfair+Display:wght@400;500&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nanum+Myeongjo:wght@700&family=Parisienne&family=Playfair+Display:wght@400;500&family=Yellowtail&display=swap" rel="stylesheet"><!--this is the fonts-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Hanabi Japanese Cuisine</title>
 </head>
+<!--All the images are from unsplash.com, I sited all the images source on my html and css file.-->
 <body>
     <header class="home-header">
-		<a href="index.html"class="logo">
+		<a href="index.html" class="logo">
             <img src="img/logo.png" alt="logo" class="logoimg">
-        </a>
-		<nav class="headernav">
+        </a><!--logo-->
+		<nav class="headernav"><!--header navigation-->
                 <div class="home"><a href="index.html">Home</a></div>
                 <div class="menu"><a href="menu.html">Menu</a></div>
 				<div class="about"><a href="about.html">About Us</a></div>
@@ -21,7 +22,6 @@
         </nav>
     </header>
     <div class="contact-banner">
-        
         <h1>Contact Us</h1>
         <h2>Follow Us on Social Media</h2>
             <div class="social">
@@ -33,14 +33,14 @@
     </div>
     <div class="arrow">&#65086;</div>
     <section class="contact-section">
-        <div class="mapgroup">
+        <div class="mapgroup"><!--I set them into a group for easier alignment when applying flex or grid to the whole page.-->
             <h2>Our Location</h2>
             <div class="map">
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.8583666242075!2d-75.69610678444427!3d45.412195579100334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b1fb55dabf%3A0xf60c1ba8233191f1!2sHanabi%20Japanese%20Cuisine!5e0!3m2!1sen!2sca!4v1594358478808!5m2!1sen!2sca" width="2000" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.8583666242075!2d-75.69610678444427!3d45.412195579100334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b1fb55dabf%3A0xf60c1ba8233191f1!2sHanabi%20Japanese%20Cuisine!5e0!3m2!1sen!2sca!4v1594358478808!5m2!1sen!2sca" width="2000" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><!--this is the google map copied from googmap.com, I set the width to 2000 becuase on the tablet view I want this map taking over the full screen.-->
             </div>
         </div>
         <div class="contactinfo">
-            <h1>Hanabi Japanese Cuisine</h1>
+            <h2>Hanabi Japanese Cuisine</h2>
             <p>Building A, Unit-434</p>
             <p>434 Bank Street</p>
             <p>Ottawa, ON K2P1Y8</p>
@@ -50,10 +50,11 @@
         </div>
         <form class="contact-form">
             <h2>Contact Us</h2>
-            <fieldset>
+            <fieldset><!--this is the contact form-->
                 <legend>Personal Information&nbsp;</legend>
                 <label for="fname">First Name</label>
                 <input class="contact-form-input" type="text" id="fname" placeholder=" First name" name="fname">
+                <!--I added some space before the name at placeholder, because the text won't be that close to the edge of the left border when I set a border-radius to it.-->
                 <label for="lname">Last Name</label>
                 <input class="contact-form-input" type="text" id="lname" placeholder=" Last name" name="lname">
                 <label for="phone">Phone Number</label>

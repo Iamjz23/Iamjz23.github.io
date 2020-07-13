@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nanum+Myeongjo:wght@700&family=Parisienne&family=Playfair+Display:wght@400;500&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nanum+Myeongjo:wght@700&family=Parisienne&family=Playfair+Display:wght@400;500&family=Yellowtail&display=swap" rel="stylesheet"><!--Google fonts-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hanabi Japanese Cuisine</title>
 </head>
+<!--All the images are from unsplash.com, I sited all the images source on my html and css file.-->
 <body>
     <header class="home-header">
-            <a href="index.html"class="logo">
+            <a href="index.html" class="logo">
                 <img src="img/logo.png" alt="logo" class="logoimg">
-            </a>
-		<nav class="headernav">
+            </a><!--Logo-->
+		<nav class="headernav"><!--header navigations-->
                 <div class="home"><a class="active" href="index.html">Home</a></div>
                 <div class="menu"><a href="menu.html">Menu</a></div>
 				<div class="about"><a href="about.html">About Us</a></div>
@@ -22,17 +23,17 @@
     </header>
     <main class="home-main">
         <div class="banner">
-            <div class="banner1">
+            <div class="banner1"><!--this is the first banner, I used background-image in css-->
                 <h1>Welcome to the Hanabi Japanese Cuisine</h1>
                 <h2>Follow Us on Social Media</h2>
-                <div class="social">
+                <div class="social"><!--put the icons into a div to align them easier.-->
                     <a href="#"><img class="ig" src="img/icons/instagram.svg" alt="instagram"></a>
                     <a href="#"><img class="tw" src="img/icons/twitter.svg" alt="twitter"></a>
                     <a href="#"><img class="fb" src="img/icons/facebook.svg" alt="facebook"></a>
                     <a href="#"><img class="li" src="img/icons/linkedin.svg" alt="linkedin"></a>
                 </div>
             </div>
-            <div class="bannergroup">
+            <div class="bannergroup"><!--I created a banner group div so it's easier to aplly flex to align them.-->
                 <div class="banner2">
                     <h1><a href="menu.html">Go to Menu</a></h1>
                 </div>
@@ -41,19 +42,21 @@
                 </div>
             </div>
         </div>
-        <div class="arrow">&#65086;</div>
-        <div class="store">
+        <div class="arrow">&#65086;</div><!--arrow for the animaiton-->
+        <div class="store"><!--a little bit story about the resturant-->
             <img src="img/home1.jpg" alt="in-store" class="storeimg">
+            <!--image is from unsplash.com  https://unsplash.com/photos/7osLqDm_dYs-->
             <div class="storetext">
                 <h2>About our Resturant</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero sint atque delectus, deleniti dolorem alias veniam exercitationem hic possimus eaque laboriosam corporis tenetur illum ex consequatur reiciendis nam sunt pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum cupiditate possimus obcaecati officia beatae, magni ab ex, odit nesciunt accusamus quod dolor placeat labore ipsam repudiandae corrupti minus. Corporis, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corporis voluptas numquam distinctio officia culpa aliquid.</p>
-                <button class="ab-button"><a href="about.html">&nbsp;&nbsp;&nbsp;Lrean More About Our Chefs&nbsp;&nbsp;&nbsp;</a></button>
+                <div class="ab-button"><a href="about.html">Lrean More About Our Chefs</a></div>
             </div>
         </div>
         <h2 class="home-h2">Today's Special</h2>
-        <section class="home-section">
-            <div class="s1">
+        <section class="home-section"><!--main content on the home page-->
+            <div class="s1"><!--I put everthing into a smaller div so it's easier to align them-->
                 <img class="sushi" src="img/6.jpg" alt="sushi">
+                <!--image is from unsplash.com  https://unsplash.com/photos/7BQC4h7wd9Y-->
                 <div class="s1-content">
                     <h3>Ocean Sushi Combo</h3>
                     <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum expedita unde reiciendis perferendis, veritatis illo ex in dignissimos."</p>
@@ -62,17 +65,19 @@
             </div>
             <div class="s2">
                 <img class="poke" src="img/4.jpg" alt="poke bowl">
+                <!--image is from unsplash.com  https://unsplash.com/photos/9r5kHbw51fk-->
                 <div class="s2-content">
                     <h3>Classic Poke Bow</h3>
                     <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum expedita unde reiciendis perferendis, veritatis illo ex in dignissimos."</p>
                     <button>&nbsp;$13.99&nbsp;</button>
                 </div>
             </div>
-            <div class="s3">
+            <div class="s3"><!--I put this link so the end user can get to the menu page without scrolling back to top-->
                 <div class="s3p"><a href="menu.html">Check Out Our Menu</a></div>
             </div>
             <div class="s4">
                 <img src="img/12.jpg" alt="ramen" class="ramen">
+                <!--image is from unsplash.com  https://unsplash.com/photos/2t28IxSTqF4-->
                 <div class="s4-content">
                     <h3>Pork belly Ramen</h3>
                     <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum expedita unde reiciendis perferendis, veritatis illo ex in dignissimos."</p>
@@ -81,6 +86,7 @@
             </div>
             <div class="s5">
                 <img src="img/5.jpg" alt="family platter" class="platter">
+                <!--image is from unsplash.com  https://unsplash.com/photos/sfldz1LjzNY-->
                 <div class="s5-content">
                     <h3>California Family Platter</h3>
                     <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum expedita unde reiciendis perferendis, veritatis illo ex in dignissimos."</p>
@@ -89,15 +95,15 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer><!--this is the footer-->
         <nav class="footernav">
             <div class="home"><a href="index.html">Home</a></div>
             <div class="menu"><a href="menu.html">Menu</a></div>
             <div class="about"><a href="about.html">About Us</a></div>
             <div class="contact"><a href="contact.html">Contact Us</a></div>
         </nav>
-        <div class="footer-p2">
-            <div class="gototop">
+        <div class="footer-p2"><!--I added an p2 div to make the alignment easier on the tablet and desktop view, because they both need to be on the right side.-->
+            <div class="gototop"><!--this is the go to top button-->
                 <a href="#top">&#8679;</a>
             </div>
             <div class="footer-social">

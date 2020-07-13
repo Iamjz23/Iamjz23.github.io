@@ -1,28 +1,33 @@
 * {
     box-sizing: border-box;
-}
+}/*I added a box sizing, so the padding will be included in a div.*/
 body {
     background-color: #FCF6E8;
 }
+
+/*mobile view start here*/
 .arrow {
     display: none;
-}
+}/*I made the arrow disapper in mobile mode.*/
 
 /*Home Page start here*/
+/*I set the margin to 0.5rem for my mobile view because the content is big enough to see*/
 .home-header {
     display:grid;
     background-color: black;
-}
+}/*this is the header, I chose black becuase it match the japanese theme. and grid to make the navigations go vertically.*/
 
 .logo{
     margin-left:auto;
     margin-right:auto;
     margin-top:0.5rem;
 }
+/*I used margin left/right: auto to center the logo.*/
+
 .logoimg {
     max-width:180px;
 }
-
+/*For the background color on the header navigations, I chose black then fading to grey.*/
 .headernav .home {
     text-align:center;
     line-height: 3rem;
@@ -31,7 +36,6 @@ body {
     font-size:1.5rem;
     color: #b10f0f;
     background-color:#343333;
-
 }
 .headernav .menu {
     text-align:center;
@@ -41,7 +45,7 @@ body {
     font-size:1.5rem;
     color: #b10f0f;
     background-color:#414040;
-}
+}/*I used the red color to match the theme.*/
 .headernav .about {
     text-align:center;
     line-height: 3rem;
@@ -63,7 +67,7 @@ body {
 
 .headernav a.active {
     font-size:2rem;
-}
+}/*I made the activting link a bigger size, so the end user will know which page they're on.*/
 
 .headernav div a:link,
 .headernav div a:visited {
@@ -75,7 +79,8 @@ body {
     display:flex;
     flex-wrap: wrap;
     margin:0.5rem;
-}
+}/*I used flex-wrap wrap to align the banners, make the smaller banner group start in a new line, it's less code than grid-template-row.*/
+
 .bannergroup {
     display:flex;
     flex-direction: row;
@@ -83,12 +88,14 @@ body {
 }
 .banner1 {
     background-image: url(../img/h4.jpg);
+    /*This image is from unsplash.com   https://unsplash.com/photos/n--CMLApjfI*/
     background-repeat: no-repeat;
     background-size:cover;
     opacity: 90%;
     flex-basis: 100%;
     border-bottom:3px solid #FCF6E8;
 }
+/*I set the opcity to 90% to make the image looks more yellowish, so it can match the background color*/
 
 .banner h1 {
     font-family: 'Courgette', cursive;
@@ -99,8 +106,6 @@ body {
     margin-right:1rem;
     color:#b10f0f;
 }
-
-
 .banner h2 {
     color:#d4af37;
     text-align:center;
@@ -127,6 +132,7 @@ body {
 
 .banner2 {
     background-image: url(../img/h5.jpg);
+    /*This image is from unsplash.com   https://unsplash.com/photos/GAMBT_XNuyc*/
     background-repeat: no-repeat;
     background-size:cover;
     opacity: 90%;
@@ -136,6 +142,7 @@ body {
 
 .banner3 {
     background-image: url(../img/h2.jpg);
+    /*This image is from unsplash.com   https://unsplash.com/photos/z6SXax6vhm0*/
     background-repeat: no-repeat;
     background-size:cover;
     opacity: 90%;
@@ -145,12 +152,13 @@ body {
     margin:0.5rem;
     margin-top: 5rem;
     margin-bottom:5rem;
-    
 }
+
 .storeimg {
     max-width:100%;
     border:2px solid black;
-}
+}/*max-width to make the image responsive*/
+
 .storetext h2 {
     font-family: 'Nanum Myeongjo', serif;
     font-size:2rem;
@@ -161,26 +169,33 @@ body {
     margin-left:auto;
     margin-right:auto;
 }
+/*I set the width to 75% on every paragraphy on this page so it will be matching.*/
+
 .storetext p {
     padding:1rem;
     font-family: 'Courgette', cursive;
     border-left:2px solid black;
     border-right:2px solid black;
 }
+/*I added a border on both side for all the p through out this page, so it looks like an chopstick holding the text.*/
+
 .storetext .ab-button {
     border:1px solid black;
     border-radius:15px;
     font-size:1rem;
     background-color: black;
-    line-height:2rem;
     font-family: 'Courgette', cursive;
-
+    line-height:2rem;
+    max-width:70%;
+    margin-left:auto;
+    margin-right:auto;
 }
 .storetext .ab-button a:link,
 .storetext .ab-button a:visited {
     color:#d4af37;
     text-decoration: none;
 }
+/*I set the color to gold, so it's matching*/
 .home-h2 {
     font-family: 'Yellowtail', cursive;
     text-align:center;
@@ -199,6 +214,7 @@ img {
     display:grid;
     text-align:center;
 }
+/*I used the grid to align the content, it automately added some space between.*/
 
 .home-section h3 {
     font-size: 1.5rem;
@@ -214,6 +230,7 @@ img {
     border-left:2px solid black;
     border-right:2px solid black;
 }
+/*I used black for the text and gold for the button to match the theme of this resturant.*/
 
 .home-section button {
     max-width:30%;
@@ -230,6 +247,7 @@ img {
 .s3 {
     display: none;
 }
+/*I made this s3 dispear becuase i don't think it's matching the content on mobile and tablet view.*/
 
 footer {
     background-color: black;
@@ -244,6 +262,7 @@ footer {
     margin-top:1rem;
     padding-bottom:1rem;
 }
+/*I used flex to space between each navigations.*/
 
 .footernav div a:link,
 .footernav div a:visited {
@@ -255,13 +274,16 @@ footer {
     text-align: center;
     font-size:1rem;
     font-family: 'Yellowtail', cursive;
-    margin-top:1rem;
+    margin-top:2rem;
 }
+/*I set the margin top to 2rem so the centered text won't be affected by the go to top button.*/
 
 .footer-icon {
     display: flex;
     justify-content: space-evenly;
 }
+/*I used flex to space between the icons.*/
+
 .ig, .fb, .li, .tw {
     background-color: #d4af37;
     border-radius:5px;
@@ -300,12 +322,15 @@ footer p{
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .menuimg-group {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap:2px;
     margin-top:2px;
 }
+/*I set the three smaller images into a div so it's easier to use flex on the displayimg div, it's use less code, and i used grid to set these three images, because I can use grid gap to align each space between, I don't need to use margin separtely on each images.*/
+
 .special {
     display:grid;
     grid-template-rows: repeat(3,1fr);
@@ -314,6 +339,8 @@ footer p{
     background-color: #19385C;
     color:#d4af37;
 }
+/*I used dark blue to match the rest of the menu.*/
+
 .special h2 {
     grid-column: 1/3;
     text-align: center;
@@ -336,7 +363,8 @@ footer p{
 }
 .menu-section hr {
     width:100%;
-}
+}/*because of the hr on the other page is effectinf this one, so i have to set the width to 100% again on this page.*/
+
 .menu-section h2 {
     text-align: center;
     margin-top:2.5rem;
@@ -357,12 +385,16 @@ footer p{
     padding-left:2.5rem;
     padding-right: 2.5rem;
 }
+/* I used padding so the spacing will only effect inside the div.*/
+
 .dis2, .dis4, .dis6, .dis8, .dis10, .dis12 {
     background-color: #19385C;
     padding-top:1rem;
     padding-bottom:1rem;
     color:#d4af37;
 }
+/* I set the background-color to dark blue to matching the banner, and that's also why I gave each dish a div.*/
+
 .pagebutton {
     display: flex;
     justify-content: space-evenly;
@@ -382,6 +414,7 @@ footer p{
 /*About Page start here*/
 .about-banner {
     background-image: url(../img/h1.jpg);
+    /*This image is from unsplash.com   https://unsplash.com/photos/hPeGDIGHnoI*/
     background-repeat: no-repeat;
     background-size: cover;
     margin:0.5rem;
@@ -424,6 +457,8 @@ footer p{
     flex-direction: column;
     justify-content: center;
 }
+/*I used flex to align the content, because it's less code than the grid.*/
+
 .p1i, .p2i, .p3i, .p4i, .p5i {
     border-radius: 50%;
     max-width:85%;
@@ -431,14 +466,20 @@ footer p{
     margin-right:auto;
     margin-top:1rem;
 }
+/*I used max-width to align the space of the text.*/
+
 .persona1, .persona2, .persona3, .persona4, .persona5 {
     display:grid;
     margin-bottom:3rem;
 }
+/*I used grid to align the content, becasue grid automately add some space between each content.*/
+
 .p1p, .p2p, .p3p, .p4p, .p5p {
     display:flex;
     flex-direction: column;
 }
+/*I used flex to align the pictures and the icons.*/
+
 .psocial {
     margin-left: auto;
     margin-right: auto;
@@ -462,6 +503,8 @@ footer p{
     background-color: #19385C;
     color:#d4af37;
 }
+/*I changed the color to add more style, and matching my theme.*/
+
 .persona2, .persona4 {
     border-top:1px solid #d4af37;
     border-bottom:1px solid #d4af37;
@@ -495,6 +538,8 @@ footer p{
     border-left: 2px solid black;
     border-right:2px solid #d4af37;
 }
+/*I used overflow on the gallery so first, the photos won't take much spave on the mobile page, and it's more functional.*/
+
 .gellary img {
     max-width: 100%;
     margin-bottom:2rem;
@@ -507,6 +552,7 @@ footer p{
 /*Contact page start here*/
 .contact-banner {
     background-image: url(../img/h3.jpg);
+    /*This image is from unsplash.com    https://unsplash.com/photos/a5ToDH34m0I*/
     background-repeat: no-repeat;
     background-size: cover;
     display:flex;
@@ -544,6 +590,8 @@ footer p{
     max-width: 100%;
     max-height: 300px
 }
+/*I made the map shorter on the mobile view, so it won't took that much space.*/
+
 .contact-section {
     margin:0.5rem;
 }
@@ -553,7 +601,7 @@ footer p{
     padding-bottom:1rem;
     border-bottom:1px solid #d4af37;
 }
-.contactinfo h1 {
+.contactinfo h2 {
     font-family: 'Yellowtail', cursive;
     text-align:center;
     font-size:2rem;
@@ -575,6 +623,8 @@ footer p{
     padding:2rem;
     padding-top:1rem;
 }
+/* I used flex to align each input in the contact form, because it's less code than grid.*/
+
 legend {
     font-size:1.5rem;
     margin:1rem;
@@ -586,7 +636,8 @@ fieldset {
     font-family: 'Nanum Myeongjo', serif;
     border-color: #d4af37;
     border-radius: 10px;
-}
+}/*I used grid to just make them align vertically.*/
+
 label {
     font-size: 1.25rem;
     margin-bottom:0.5rem;
@@ -620,6 +671,7 @@ textarea {
 }
 
 
+/*Tablet view starts here.*/
 @media (min-width:700px) {
     .arrow {
         display: block;
@@ -628,17 +680,21 @@ textarea {
         font-weight: bolder;
         font-size:2rem;
     }
+    /*I made the arrow appear on both tablet and desktop view, i set the margin to negative so the arrow will be more close to the banner.*/
     
     .headernav {
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
+    /*display flex to set the navigations horizontally.*/
+
     .headernav .home, .headernav .menu, .headernav .about, .headernav .contact {
         border:0px;
         width:100%;
         background-color: black;
-    }
+    }/*I changed the background-color to black, because i don't want any border on the tablet view, just the text itself showing up.*/
+
     .banner {
         margin:2.5rem;
     }
@@ -655,6 +711,7 @@ textarea {
         justify-content: center;
         margin:3.5rem;
     }
+    
     
     .storetext h2 {
         margin-bottom: 1rem;
@@ -687,6 +744,8 @@ textarea {
         max-width: 50%;
         max-height: 250px;
     }
+    /*i set the image to 50% so it's smaller and will fit into each line.*/
+
     .home-section button {
         max-width: 50%;
         margin-bottom:0;
@@ -699,6 +758,8 @@ textarea {
         margin-top:1.5rem;
         margin-bottom:1.5rem;
     }
+    /*I set the border none, because it looks too messy.*/
+
     .home-section h3 {
         margin-top:0;
         font-size:2rem;
@@ -709,6 +770,8 @@ textarea {
         justify-content: space-between;
         margin-bottom: 3rem;
     }
+    /* I used display flex to align the content, because it took less code than grid when displaying them horizontally.*/
+
     .s1-content, .s4-content {
         margin-left:2rem;
         border-right: 1px solid grey;
@@ -716,17 +779,20 @@ textarea {
     }
     .s2 img, .s5 img {
         order:1;
-    }
+    }/*I used order:1 to move the image to the end. also add more style on my page.*/
+
     .s2-content, .s5-content {
         margin-right:2rem;
         border-left: 1px solid grey;
         padding-left:1rem;
     }
+    /*I added a border just to add more style.*/
 
     footer {
         display:grid;
         grid-template-columns: repeat(2,1fr);
     }
+    /*I used grid to align the footer.*/
     .footernav {
         flex-direction: column;
         line-height: 2rem;
@@ -776,6 +842,7 @@ textarea {
         flex-direction: column;
         justify-content: space-evenly;
     }
+    /*I used flex basis to align the two parts on the banner, it's more accurate.*/
    
     .special p {
         margin:0.5rem;
@@ -791,6 +858,8 @@ textarea {
         display:grid;
         grid-template-columns: 1fr 1fr;
     }
+    /*I used grid to align the menu, to add more style and also easier to read.*/
+
     .menu-section hr {
         border:1px solid black;
     }
@@ -816,9 +885,6 @@ textarea {
     }
 
     
-
-
-
     /*About Page start here*/
     .about-banner {
         margin:2.5rem;
@@ -833,6 +899,8 @@ textarea {
         margin-right:auto;
         font-size:1.5rem;
     }
+    /*margin-left/right auto to make it center.*/
+
     .about-banner h2 {
         font-size:2rem;
         margin-top:-1rem;
@@ -861,6 +929,8 @@ textarea {
         margin-left:3.5rem;
         margin-right: 3.5rem;
     }
+    /*I used grid to set the gallery, it will display two images on one line.*/
+
     .gellary img {
         margin:0;
         border:none;
@@ -875,6 +945,8 @@ textarea {
         animation-duration: 1s;
         animation-iteration-count: 1;
       }
+      /*I added an animation because the image is a bit small on tablet view, so when clicking on the image it will grow, it's easier to see.*/
+
 
     /*Contact page start here*/
     .contact-banner {
@@ -896,29 +968,34 @@ textarea {
         display:flex;
         flex-wrap: wrap;
     }
+    /*I used flex to align all the content, it takes less code than grid when I'm using flex basis to effect the map.*/
+
     .mapgroup {
         margin:2rem;
         flex-basis:100%;
         margin-top:0;
     }
-    
+    /*I set the flex-basis to 100% so it will take the whole line.*/
+
     .contactinfo {
         border-right:1px solid black;
         border-bottom:none;
         flex-basis:50%;
-    }
+    }/*I set these two content to 50% each so they both can take half of the page.*/
+
     .contact-form {
         border-left:1px solid black;
         margin-top:3rem;
         flex-basis:50%;
     }
-    .contact-section h1, .contact-section h2 {
+    .contact-section h2 {
         font-size:2.5rem;
         margin-left:3rem;
         margin-right:3rem;
     }
 }
 
+/*desktop view start here*/
 @media (min-width:1280px) {
     @keyframes arrowup {
         0% {
@@ -927,40 +1004,71 @@ textarea {
         100% {
             transform: translate(0,10px);
           }
-        
       }
+
       .arrow {
         animation-name:arrowup;
         animation-duration: 1s;
         animation-iteration-count: infinite;
       }
+      /*I used this animaiton to made the arrow move up and down. to tell the end user scroll down for more content.*/
 
     .home-header {
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-    }
+    }/*I used display flex to align the header, and space-between to align the spacing.*/
     
     .logo {
         margin-left:2.5rem;
-
     }
+
     .headernav div a:hover,
     .headernav div a:active {
         color: #d4af37;
         font-size:2rem;
     }
+    /*when hovering on each navigation link, it will turn to gold.*/
+
     .headernav {
         align-self: flex-end;
         width:50%;
         margin-right:2.5rem;
         margin-bottom:0rem;
     }
+
+    .banner {
+        margin-left:5rem;
+        margin-right:5rem;
+        display: flex;
+        flex-direction: row;
+    }
+    /*I used flex basis to align the banner*/
+
+    .banner1 {
+        flex-basis: 70%;
+        border-bottom:none;
+    }
+    .bannergroup {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+        border-left:3px solid #FCF6E8;
+    }
+    .banner2 {
+        border-bottom:1.5px solid #FCF6E8;
+    }
+    .banner3 {
+        border-top:1.5px solid #FCF6E8;
+    }
+
     .store {
         flex-direction: row;
         margin:6rem;
         background-color: black;
     }
+    /*I changed the background color to black to match the content, and the theme.*/
+
     .storeimg {
         flex-basis: 60%;
     }
@@ -968,6 +1076,8 @@ textarea {
         flex-basis: 35%;
         color:#d4af37;
     }
+    /*I used flex basis to align these two content.*/
+
     .storetext .ab-button {
         background-color: #d4af37;
         color:black;
@@ -991,28 +1101,7 @@ textarea {
         "two three four"
         "five five four";
     }
-    .banner {
-        margin-left:5rem;
-        margin-right:5rem;
-        display: flex;
-        flex-direction: row;
-    }
-    .banner1 {
-        flex-basis: 70%;
-        border-bottom:none;
-    }
-    .bannergroup {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 30%;
-        border-left:3px solid #FCF6E8;
-    }
-    .banner2 {
-        border-bottom:1.5px solid #FCF6E8;
-    }
-    .banner3 {
-        border-top:1.5px solid #FCF6E8;
-    }
+    /*I want to add more style to the content on the home page, so I used grid area, I think it is the best way to do it.*/
 
     .s1 {
         grid-area: one;
@@ -1021,7 +1110,7 @@ textarea {
         flex-direction: row;
         justify-content: space-between;
         border-bottom:3px solid black;
-    }
+    }/*I used flex to align this content, because flex took less code*/
     .s2 {
         grid-area: two;
         display: flex;
@@ -1033,7 +1122,8 @@ textarea {
     .s3 {
         display: block;
         grid-area: three;
-    }
+    }/*I made this s3 appear, and will be adding an animation to it.*/
+
     .s4 {
         grid-area: four;
         display: flex;
@@ -1058,10 +1148,13 @@ textarea {
     .s1 img, .s5 img {
         max-width:90%;
     }
+    /*I changed the width of the image to match up with all the images.*/
+
     .s2 img, .s4 img {
         max-width:100%;
         max-height:100%;
-    }
+    }/*I changed the width of the image to match up with all the images.*/
+
     .home-section h3 {
         font-size:1.5rem;
     }
@@ -1085,6 +1178,8 @@ textarea {
         border:none;
         margin-top:1rem;
     }
+    /*I removed all the border to match up with my mock up page.*/
+
     .s3 {
         margin:auto;
         font-family: 'Parisienne', cursive;
@@ -1116,7 +1211,8 @@ textarea {
         animation-duration: 0.7s;
         animation-iteration-count: infinite;
         
-      }
+      }/*when hovering on the social media icons, user will notice.*/
+
     @keyframes rotate {
         50% {
           transform:rotatey(180deg);
@@ -1126,18 +1222,7 @@ textarea {
         animation-name: rotate;
         animation-duration: 1.5s;
         animation-iteration-count: infinite;
-      }
-
-    @keyframes up {
-        50% {
-          transform:translate(0,-15px);
-        }
-      }
-      .gototop {
-        animation-name: up;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-      }
+      }/*the s3 is spinning, so the end user will notice, and can click to go to the menu page.*/
 
     @keyframes stop {
         50% {
@@ -1148,7 +1233,18 @@ textarea {
             animation-name:stop;
             animation-duration: 0s;
             animation-iteration-count: infinite;
+        }/*I made the s3 stop when hovering on it, so the end user read more clearly about the text.*/
+
+    @keyframes up {
+        50% {
+          transform:translate(0,-15px);
         }
+      }
+      .gototop {
+        animation-name: up;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }/*I made the goto top button going up and down so the end user will notice.*/
 
     /*Menu Page Start here*/
     .menu-banner {
@@ -1189,18 +1285,25 @@ textarea {
     .p1i, .p2i, .p3i, .p4i, .p5i {
         max-width:80%;
     }
+    
     .persona1, .persona2, .persona3, .persona4, .persona5 {
         display:grid;
         grid-template-columns: 1fr 1fr;
     }
+    /*I used grid to align all the content inside each div, so the spacing and content alignment would look better.*/
+
     .psocial {
         transform: scale(1.2);
         margin-bottom:1rem;
     }
+    /*I made the social icons bigger so it's more clearly to the user.*/
+
     .p1c,.p2c, .p3c, .p4c, .p5c {
-        margin-top:auto;
+        margin-top: auto;
         margin-bottom: auto;
     }
+    /*made the content top to bottom at the center.*/
+
     .p1c h3, .p3c h3, .p5c h3 {
         text-align:left;
     }
@@ -1210,6 +1313,8 @@ textarea {
     .p2p, .p4p {
         order:1;
     }
+    /*I used order:1 to make the image move to the end.*/
+
     .gellarytext h1 {
         margin-bottom:2rem;
         font-size:3rem;
@@ -1224,7 +1329,8 @@ textarea {
         overflow: hidden;
         height:auto;
         border:none;
-    }
+    }/*I used grid to set the images into 3x3. to add more style, and the end users can see them more clearly on the desktop view.*/
+
     .gellary img {
         padding:1rem;
     }
@@ -1232,6 +1338,8 @@ textarea {
         border-right: 2px solid black;
         border-bottom:2px solid black;
     }
+    /*I added the border to add more style.*/
+
     .gellary .g3, .gellary .g6 {
         border-bottom: 2px solid black;
     }
@@ -1269,6 +1377,8 @@ textarea {
         animation-duration: 1.5s;
         animation-iteration-count: initial;
       }
+      /*I added this spinning image effect to all the portrait images, so the end users can have a better view on which chef's bio they're reading.*/
+
     @keyframes grow {
        100% {
            transform:scale(1);
@@ -1278,6 +1388,8 @@ textarea {
         animation-name: grow;
         animation-duration: initial;
     }
+    /*I stopped the growing effect from the tablet view.*/
+
     
     /*Contact page start here*/
     .contact-banner {
@@ -1297,6 +1409,8 @@ textarea {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    /*I used grid to align the body content, to move the map and the contact info into one row.*/
+
     .mapgroup {
         grid-row:1/2;
         grid-column: 1/2;
@@ -1311,7 +1425,9 @@ textarea {
         grid-column: 1/2;
         border-right:none;
     }
-    .contactinfo h1 {
+    /*I moved the map and the contact info together because there;s too many space under the contact info, so I did that for better spacing, and style.*/
+
+    .contactinfo h2 {
         font-size:3rem;
     }
     .contact-form {
@@ -1324,10 +1440,10 @@ textarea {
         margin-top:0;
         font-size:3rem;
         margin-top:-5rem;
+        /*I set the margin to negative just to make thetop of the form and the map starts at the same level.*/
+
     }
-
-    
-
 }
+/*I used lots of margin to get my website looks more close to my mock up pages.*/
 
 

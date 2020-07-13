@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nanum+Myeongjo:wght@700&family=Parisienne&family=Playfair+Display:wght@400;500&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nanum+Myeongjo:wght@700&family=Parisienne&family=Playfair+Display:wght@400;500&family=Yellowtail&display=swap" rel="stylesheet"><!--Google fonts-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Hanabi Japanese Cuisine</title>
 </head>
+<!--All the images are from unsplash.com, I sited all the images source on my html and css file.-->
 <body>
     <header class="home-header">
-            <a href="index.html"class="logo">
+            <a href="index.html" class="logo">
                 <img src="img/logo.png" alt="logo" class="logoimg">
-            </a>
-		<nav class="headernav">
+            </a><!--Logo-->
+		<nav class="headernav"><!--header navigations-->
                 <div class="home"><a href="index.html">Home</a></div>
                 <div class="menu"><a href="menu.html" class="active">Menu</a></div>
 				<div class="about"><a href="about.html">About Us</a></div>
 				<div class="contact"><a href="contact.html">Contact Us</a></div>
         </nav>
     </header>
-    <div class="menu-banner">
+    <div class="menu-banner"><!--this is the main banner-->
         <div class="displayimg">
             <img src="img/6.jpg" alt="sushi" class="spdish">
-            <div class="menuimg-group">
+            <div class="menuimg-group"><!--I put them into a div so it's easier to align them.-->
                 <img src="img/12.jpg" alt="ramen" class="spramen">
                 <img src="img/9.jpg" alt="sashimi" class="spsash">
                 <img src="img/5.jpg" alt="platter" class="spfmp">
@@ -37,13 +38,15 @@
                 <p>Lorem ipsum dolor sit amet  $9.99</p>
         </div>
     </div>
-    <div class="arrow">&#65086;</div>
+    <div class="arrow">&#65086;</div><!--arrow for animation-->
     <section class="menu-section">
         <h2>Menu</h2>
         <hr>
-        <div class="sectioncontent">
+        <div class="sectioncontent"><!--this is the main section of the menu-->
             <div class="sectionp1">
+                <!--I split the menu into two dives, beucase it's easier to use flex to align the content-->
                 <div class="dis1">
+                    <!--I put the every dishes in to a div because I want to apply different background colors.-->
                     <h3>Lorem ipsum dolor sit</h3>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ea esse."</p>
                     <h4>$10.99</h4>
@@ -108,11 +111,11 @@
             </div>
         </div>
     </section>
-    <div class="pagebutton">
-        <button>&nbsp;Previous&nbsp;</button>
+    <div class="pagebutton"><!--I put two buttons into a div so it's easier to use space-evenly to align them.-->
+        <button>&nbsp;Previous&nbsp;</button><!--I use &nbsp as space to make the text spacing looks better-->
         <button>&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;</button>
     </div>
-    <footer>
+    <footer><!--this is the footer-->
         <nav class="footernav">
             <div class="home"><a href="index.html">Home</a></div>
             <div class="menu"><a href="menu.html">Menu</a></div>
@@ -121,7 +124,7 @@
         </nav>
         <div class="footer-p2">
             <div class="gototop">
-                <a href="#top">&#8679;</a>
+                <a href="#top">&#8679;</a><!--this is the go to top button-->
             </div>
             <div class="footer-social">
                 <h2>Follow Us on Social Media</h2>
