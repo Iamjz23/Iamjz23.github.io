@@ -10,11 +10,11 @@
 
     <title>Bootstrap This!</title>
   </head>
-  <body style="background-color: #222222;">
-    <!--I chose this darkest grey, I think it match the purple header and footer better.-->
+  <body class="bg-dark">
+    <!--I chose grey for the background color, I think it match the purple header and footer better.-->
 
     <!--This is the nav-->
-    <nav class="nav navbar-expand-md navbar-dark px-md-3 py-md-2" style="background-color: #6a0dad;">
+    <nav class="nav navbar-expand-md bg-info navbar-dark px-md-3 py-md-2">
         <!--I chose purple because I think this is the main color for Bootstrap.-->
         <a href="#" class="navbar-brand mx-auto py-2">Bootstrap This!</a>
         <button class="navbar-toggler col-sm-12" data-toggle="collapse" data-target="#navbarNav">
@@ -37,11 +37,11 @@
             <h2>Learn more about bootstrap!</h2>
             <button type="button" class="btn btn-light mt-5 mb-5">Learn More</button>
           </div>
-          <div class="card rounded col-sm-10 col-md-7 col-lg-5 mx-auto" style="background-color: #6a0dad;">
+          <div class="card rounded bg-info col-sm-10 col-md-7 col-lg-5 mx-auto">
             <div class="card-body">
               <blockquote class="blockquote mb-0">
                 <p class="font-italic">"Bootstrap just made coding so much easier!"</p>
-                <footer class="blockquote-footer text-info">Tianyi Zhang</footer>
+                <footer class="blockquote-footer text-dark">Tianyi Zhang</footer>
               </blockquote>
             </div>
             <!--I chose a card to display the quote, because it's a pre made box for quotes.-->
@@ -118,7 +118,7 @@
 
       <!--These are some basic Components I chose to demonstrate.-->
       <h1 class="text-white text-center">Components</h1>
-      <div class="card rounded col-10 col-sm-7 col-lg-6 col-xl-5 mx-auto my-3" style="background-color: #6a0dad;">
+      <div class="card rounded bg-info col-10 col-sm-7 col-lg-6 col-xl-5 mx-auto my-3">
         <div class="card-body">
           <blockquote class="blockquote mb-0">
             <p class="font-italic text-white">"Some basic but important Bootstrap components you could learn!"</p>
@@ -180,7 +180,7 @@
                 [/div]
             </div>
             <div class="mt-3 mt-md-0 pl-md-3 pl-xl-0 mt-xl-3  px-0 col-md-7 col-xl-12">
-              <div class="card bg-dark text-white">
+              <div class="card bg-secondary text-white">
                 <img class="card-img-top w-100" src="img/2.jpg" alt="Card image">
                 <!--This is my own image-->
                 <div class="card-body">
@@ -292,7 +292,7 @@
 
       <!--Demonstrate of some baisc utilities feature I think it's useful.-->
       <h1 class="text-white text-center mt-lg-5">Utilities</h1>
-      <div class="card rounded col-10 col-sm-7 col-lg-6 col-xl-5 mx-auto my-3" style="background-color: #6a0dad;">
+      <div class="card rounded bg-info col-10 col-sm-7 col-lg-6 col-xl-5 mx-auto my-3">
         <div class="card-body">
           <blockquote class="blockquote mb-0">
             <p class="font-italic text-white">"Some basic but important Bootstrap utilities you could use to style your site!"</p>
@@ -370,9 +370,9 @@
       <br>
       <!--I used lots of margin and padding to style my website.-->
 
-      <div class="card-footer mt-5 text-white" style="background-color: #6a0dad;">
+      <div class="card-footer bg-info mt-5 text-white">
         <div class="gototop float-right">
-            <a href="#top">&#8679;</a><!--A go to top button make the end user easier to go back to top to find the navigations.-->
+            <a href="#top" class="text-warning font-weight-bold">&#8679;</a><!--A go to top button make the end user easier to go back to top to find the navigations.-->
         </div>
         <p class="text-center mt-3">Copyright &copy; Bootstrap This! by Tianyi Zhang 2020</p><!--Copy right-->
       </div>
