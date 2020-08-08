@@ -526,7 +526,9 @@ footer p{
         padding:0;
         margin:0;
     }
-
+    .art2, .art3 {
+        margin-left:0.5rem;
+    }
     .videomobile {
         display: none;
     }
@@ -705,7 +707,7 @@ footer p{
         display:flex;
         flex-direction: column;
         margin-bottom: 3rem;
-        margin-top:1rem;
+        margin-top:-1rem;
     }
     .por-group1 p {
         padding-left:3rem;
@@ -783,10 +785,10 @@ footer p{
         padding:0;
         max-width:80%;
     }
-    .art1, .art2, .art3 {
-        flex-direction: column;
-        margin-top:0;
+    .art2, .art3 {
+        margin-left:1.25rem;
     }
+    
     .por-group3 p {
         padding-top:0;
     }
