@@ -1,0 +1,801 @@
+*{
+    box-sizing: border-box;
+}
+.header {
+    display: grid;
+    margin:1rem;
+}
+.headernav {
+    display: none;
+}
+.header a .logoimg {
+    width:100px;
+}
+.header a {
+    margin-right: auto;
+    margin-left: auto;
+}
+.dropdown {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:0.5rem;
+}
+.dropdown-menu {
+    left: 50% !important;
+    right: auto !important;
+    text-align: center !important;
+    transform: translate(-50%, 30%) !important;
+    border:0px solid white;
+    border-radius:10%;
+    background-color: black;
+    padding-top:0.7rem;
+    padding-bottom:0.7rem;
+}
+/*I learned this code from https://stackoverflow.com/questions/38419705/position-dropdown-button-and-dropdown-menu-in-center*/
+.dropdown-menu .active {
+    background-color:#d4af37;
+}
+.dropdown-item {
+    color:white;
+}
+
+
+/*Home page start here*/
+.banner-home {
+    background-image: url(../img/9.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 85%;
+    padding-top:6rem;
+    padding-bottom:6rem;
+    text-align:center;
+    border:1px solid black;
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+.banner-home h1 {
+    font-family: 'Roboto Slab', serif;
+    opacity: 100%;
+    color:white;
+}
+.icongroup {
+    display:flex;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+.home-social {
+    justify-content: center;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap:2rem;
+    grid-template-areas: 
+    ". a ."
+    "b c d"
+    ". e .";
+}
+
+.followme {
+    grid-area:a;
+    background-color: #FF4500;
+    width:80px;
+    height:80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.followme p {
+    margin-top:1.5rem;
+}
+
+.box-fb {
+    grid-area:b;
+    width:80px;
+    height:80px;
+    background-color: #CCDDFF;
+    display: flex;
+    justify-content: center;
+}
+.box-ig {
+    grid-area:c;
+    width:80px;
+    height:80px;
+    background-color: #B19CD9;
+    display: flex;
+    justify-content: center;
+}
+.box-tw {
+    grid-area:d;
+    width:80px;
+    height:80px;
+    background-color: #DCFFFB;
+    display: flex;
+    justify-content: center;
+}
+.box-li {
+    grid-area:e;
+    width:80px;
+    height:80px;
+    background-color: #FFEFFF;
+    display: flex;
+    justify-content: center;
+}
+hr {
+    margin:1rem;
+    background-color:#d4af37
+}
+.home-section {
+    display:grid;
+    text-align:center;
+    margin:1rem;
+    grid-gap:2rem;
+}
+.home-section img {
+    max-width:100%;
+}
+.sec1, .sec2, .sec3, .sec4, .sec5, .sec6 {
+    padding-left:2rem;
+    padding-right:2rem;
+    display:grid;
+    grid-gap:1.5rem;
+    padding-bottom:1rem;
+    
+}
+.home-h2 {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin-bottom:3rem;
+    margin-top:2rem;
+} 
+.home-section h3 {
+    font-family: 'Baloo Tamma 2', cursive;
+}
+.home-section p {
+    font-family: 'Montserrat', sans-serif;
+}
+.home-section hr {
+    display:none;
+}
+.sec-button {
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight: bold;
+    color:#FF4500;
+}
+
+
+footer {
+    background-color: black;
+    display:grid;
+    color:white;
+    font-family: 'Playfair Display', serif;
+    margin-top:3rem;
+}
+.footernav {
+    display:flex;
+    justify-content: space-evenly;
+    font-size:1.3rem;
+    margin-top:1rem;
+    padding-bottom:1rem;
+}
+/*I used flex to space between each navigations.*/
+
+.footernav div a:link,
+.footernav div a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social {
+    text-align: center;
+    font-size:1rem;
+}
+/*I set the margin top to 2rem so the centered text won't be affected by the go to top button.*/
+.footer-social p {
+    font-size:1.3rem;
+}
+.footer-icon {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:-1rem;
+}
+
+.ig, .fb, .li, .tw {
+    background-color: #d4af37;
+    border-radius:5px;
+}
+.gototop a {
+    font-size:1.5rem;
+    color:#d4af37;
+    float:right;
+    margin-right:1rem;
+    margin-top:-1rem;
+}
+.gototop a:link,
+.gototop a:visited {
+    color:#d4af37;
+}
+footer p{
+    text-align: center;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+}
+
+/*Porfolio page start here*/
+.portfolio-body img {
+    max-width:100%;
+}
+.banner-portfolio {
+    background-image: url(../img/21.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 85%;
+    padding-top:6rem;
+    padding-bottom:6rem;
+    text-align:center;
+    border:1px solid black;
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+.banner-portfolio h1 {
+    font-family: 'Roboto Slab', serif;
+    opacity: 100%;
+    color:white;
+}
+.icongroup {
+    display:flex;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+.portfolio-social {
+    justify-content: center;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap:2rem;
+    grid-template-areas: 
+    ". a ."
+    "b c d"
+    ". e .";
+}
+.por-group1 {
+    margin:1rem;
+}
+.por-group1 p {
+    text-align: center;
+    margin-top:1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+}
+.por-group1 img {
+    margin-top:2rem;
+}
+
+.por-group2 .imggroup {
+    display: none;
+}
+
+.por-section h2 {
+    font-family: 'Baloo Tamma 2', cursive;
+    text-align: center;
+    margin-top: 3.5rem;
+}
+.por-group2 .slideshow{
+    margin:1rem;
+    border:1px solid black;
+}
+.por-group3 {
+    margin:1rem;
+}
+.por-group3 p{
+    text-align: center;
+    padding-left:3rem;
+    padding-right:3rem;
+    margin-top:1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+}
+.art1, .art2, .art3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:2rem;
+}
+.por-group3 img {
+    max-width: 60%;
+}
+.por-group4 .videogroup{
+    display:none;
+}
+.por-group4 {
+    margin:1rem;
+}
+.card {
+    background-color: black;
+    color:white;
+}
+.card h5 {
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size:2rem;
+}
+.card p {
+    font-family: 'Montserrat', sans-serif;
+}
+.card-body .btn {
+    background-color: #FFEFFF;
+    color: #FF4500;
+    text-align: center;
+}
+.portfolio-body footer {
+    margin-top:5rem;
+}
+
+
+
+
+
+
+@media (min-width:700px) {
+    .dropdown {
+        display:none;
+    }
+    .headernav {
+        display:inline-block;
+        display:flex;
+        justify-content: space-evenly;
+        margin-top:1rem;
+        color:black;
+        font-size: 1rem;
+    }
+    a.active {
+        text-transform: uppercase;
+    }
+    .headernav div a:link,
+    .headernav div a:visited {
+        color:black;
+        text-decoration: none;
+    }
+    .headernav div a:hover,
+    .headernav div a:active {
+        color:#FF4500;
+    }
+    .banner-home {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding:7rem;
+    }
+    .home-social {
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        ". . a . ."
+        "b c . d e";
+    }
+    .home-body hr {
+        margin-left:3rem;
+        margin-right:3rem;
+    }
+    .home-section {
+        grid-gap:0; 
+    }
+    .home-section img {
+        max-width: 45%;
+    }
+    .sec1, .sec2, .sec3, .sec4, .sec5, .sec6 {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+    .sec2 img, .sec4 img, .sec6 img {
+        order:1;
+    }
+    .s1-content, .s2-content, .s3-content, .s4-content, .s5-content, .s6-content {
+        margin-top:1rem;
+    }
+    footer {
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    /*I used grid to align the footer.*/
+    .footernav {
+        flex-direction: column;
+        line-height: 2rem;
+        font-size:1.2rem;
+        margin-left: 3.5rem;
+    }
+   
+    .footer-social {
+        float: right;
+        margin-top:2rem;
+        margin-right:1rem;
+    }
+    .footer-icon {
+        justify-content: center;
+    }
+    .footer-icon .tw, .footer-icon .fb, .footer-icon .li {
+        margin-left:2rem;
+    }
+ 
+    .gototop {
+        margin-top:1rem;
+    }
+    footer p {
+        grid-column:1/3;
+        text-align: center;
+        margin-top:-0.5rem;
+    }
+
+    /*Portfolio page start here*/
+    .banner-portfolio {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding:7rem;
+    }
+    .portfolio-social {
+        margin-top:2rem;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "b c a d e";
+    }
+    .por-group1 {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top:5rem;
+    }
+    .por-group1 img {
+        max-width: 50%;
+        margin-top:0;
+    }
+    .laptop, .video, .gp1-portrait {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        margin-top:-3rem;
+    }
+    .video img {
+        order:1;
+    }
+    .laptop p, .gp1-portrait p {
+        margin-left: 1rem;
+    }
+    .video p {
+        margin-right: 1rem;
+    }
+    
+    .por-group2 .slideshow {
+        display: none;
+    }
+    .por-group2 .imggroup {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .por-group2 .imggroup img {
+        max-width: 100%;
+        padding:1rem;
+    }
+    .imggroup .img1,.imggroup .img2, .imggroup .img4, .imggroup .img5{
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .imggroup .img3, .imggroup .img6 {
+        border-bottom: 1px solid black;
+        margin-bottom: -1px;
+    }
+    .imggroup .img7, .imggroup .img8 {
+        border-right: 1px solid black;
+    }
+    .por-group3 {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .art1, .art2, .art3 {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom:0;
+        margin-top:0;
+    }
+    .por-group3 img {
+        margin:0;
+        max-width: 50%;
+    }
+    .art1 img, .art3 img {
+        order:1;
+    }
+    .art1 p, .art2 p, .art3 p {
+        padding-top:2rem;
+    }
+    .art1 {
+        margin-top:2rem;
+    }
+
+    .videomobile {
+        display: none;
+    }
+
+    .por-group4 .videogroup {
+        display: grid;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        text-align: center;
+    }
+    .videogroup img {
+        margin-top: 2rem;
+    }
+    .videogroup p {
+        padding-left:5rem;
+        padding-right:5rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-top:1.5rem;
+        font-size: 1.15rem;
+    }
+    .videogroup .btn {
+        background-color: black;
+        color:#CCDDFF;
+        font-family: 'Baloo Tamma 2', cursive;
+        margin-top:1.5rem;
+    }
+    .v-gp2, .v-gp3 {
+        margin-top:2rem;
+    }
+
+
+}
+@media (min-width:1200px) {
+    h1 {
+        font-size:3rem;
+    }
+    .header {
+        display:flex;
+        justify-content: space-between;
+    }
+    .header a {
+        margin:0;
+        margin-left:3rem;
+    }
+    .headernav {
+        margin-right:3rem;
+        margin-top:3.5rem;
+        font-size:1.25rem;
+    }
+    .banner-home {
+        margin-left: 8rem;
+        margin-right: 8rem;
+        margin-top:2rem;
+    }
+    .home-social {
+        grid-template-areas: 
+        ". b . e ."
+        "c . a . d";
+    }
+    @keyframes hover {
+        100% {
+          transform: translate(0, -15px); 
+        }
+      }
+      .home-social a:hover {
+        animation-name:hover;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite; 
+      }
+
+    .home-body hr {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+    .home-section {
+        margin-left: 8rem;
+        margin-right: 8rem;
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .s1-content, .s2-content, .s3-content {
+        padding:1.5rem;
+    }
+    .s1-content p, .s2-content p, .s3-content p {
+        font-size:1.2rem;
+    }
+    .home-section hr {
+        display: inline-block;
+        flex-basis: 100%;
+        margin:0;
+    }
+    .sec4, .sec5, .sec6 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis:33%;
+        margin-top:5rem;
+    }
+    .sec4 img, .sec5 img, .sec6 img {
+        max-width:100%;
+    }
+    .sec4 img, .sec6 img {
+        order:0;
+    }
+    footer {
+        margin-top: 0rem;
+    }
+    @keyframes up {
+        50% {
+          transform:translate(0,-5px);
+        }
+      }
+      .gototop {
+        animation-name: up;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+    
+    /*portfolio page start here*/
+    .banner-portfolio {
+        margin-left: 8rem;
+        margin-right: 8rem;
+        margin-top:2rem;
+    }
+    .portfolio-social {
+        grid-template-areas: 
+        "c . a . d"
+        ". b . e .";
+    }
+    @keyframes hover {
+        100% {
+          transform: translate(0, -15px); 
+        }
+      }
+      .portfolio-social a:hover {
+        animation-name:hover;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+      }
+    
+    .por-group1 {
+        display: grid;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "lt . pt"
+        "lt vd pt"
+        ". vd .";
+    }
+    .laptop {
+        grid-area:lt;
+    }
+    .video {
+        grid-area:vd;
+    }
+    .gp1-portrait {
+        grid-area: pt;
+    }
+    .por-group1 img {
+        max-width: 100%;
+    }
+    .laptop, .video, .gp1-portrait {
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        margin-top:1rem;
+    }
+    .por-group1 p {
+        padding-left:3rem;
+        padding-right:3rem;
+    }
+    .por-group1 p {
+        margin:0;
+        padding:1.5rem;
+    }
+    .aptop img {
+        margin-bottom:0;
+    }
+    .por-group1 .video img {
+        order:0;
+    }
+
+    .por-group2 .imggroup img {
+        border:0;
+        padding:0;
+    }
+
+    .por-group2 .imggroup {
+        margin-left: 8rem;
+        margin-right: 8rem;
+        margin-top:2rem;
+        margin-bottom:5rem;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas:
+        ". . p1 . ."
+        ". p2 . p3 ."
+        "p4 . p5 . p6"
+        ". p7 . p8 ."
+        ". . p9 . .";
+    }
+
+    .img1 {
+        grid-area: p1;
+    }
+    .img2 {
+        grid-area: p2;
+    }
+    .img3 {
+        grid-area: p3;
+    }
+    .img4 {
+        grid-area: p4;
+    }
+    .img5 {
+        grid-area: p5;
+    }
+    .img6 {
+        grid-area: p6;
+    }
+    .img7 {
+        grid-area: p7;
+    }
+    .img8 {
+        grid-area: p8;
+    }
+    .img9 {
+        grid-area: p9;
+    }
+
+    .por-group3 {
+        display: flex;
+        flex-direction: row;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        justify-content: space-between;
+    }
+    .por-group3 img {
+        order:0;
+        margin-top:1rem;
+        padding:0;
+    }
+    .art1, .art2, .art3 {
+        flex-direction: column;
+        margin-top:0;
+    }
+    
+    .por-group4 .videogroup {
+        display: grid;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        ". v2 ."
+        "v1 v2 v3"
+        "v1 . v3";
+    }
+    .v-gp1 {
+        grid-area: v1;
+        margin-top: 1rem;
+    }
+    .v-gp2 {
+        grid-area: v2;
+    }
+    .v-gp3 {
+        grid-area: v3;
+        margin-top: 1rem;
+    }
+    .videogroup p {
+        padding:1rem;
+    }
+    .videogroup .btn {
+        margin-top: 0;
+    }
+
+
+    
+    
+
+
+    
+}
