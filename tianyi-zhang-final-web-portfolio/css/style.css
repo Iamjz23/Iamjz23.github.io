@@ -51,6 +51,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 .cover-main .dropdown-menu {
     background-color: white;
@@ -74,8 +76,8 @@
 
 #coverslide {
     margin:3rem; 
-    position: relative;
     top:10%;
+    position: relative;
 }
 #coverslide img {
     border-radius: 10%;
@@ -104,13 +106,13 @@
 .cover-body footer{
     margin-top:0;
 }
-.cover-main .arrow a:link,
-.cover-main .arrow a:visited {
+.arrow a:link,
+.arrow a:visited {
     color:#FF4500;
 }
 
-.cover-main .arrow a:hover,
-.cover-main .arrow a:active {
+.arrow a:hover,
+.arrow a:active {
     color:#B19CD9;
 }
 
@@ -421,10 +423,179 @@ footer p{
     margin-top:5rem;
 }
 
+/*About page start here*/
+.banner-about {
+    background-image: url(../img/18.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 85%;
+    padding-top:6rem;
+    padding-bottom:6rem;
+    text-align:center;
+    border:1px solid black;
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+.banner-about h1 {
+    font-family: 'Roboto Slab', serif;
+    opacity: 100%;
+    color:white;
+}
+.about-main h1 {
+    font-family: 'Baloo Tamma 2', cursive;
+    text-align:center;
+    margin-top:3rem;
+}
+.about-sec1 {
+    display:grid;
+}
+.about-sec1 .card {
+    margin-left:2rem;
+    margin-right:2rem;
+    margin-top:1rem;
+    background-color:#ebecf0;
+    color:black;
+    text-align: center;
+    border:none;
+}
+.about-sec1 .card .card-body {
+    margin-top:1rem;
+}
+.about-sec1 .card .card-body h5 {
+    font-size:1.5rem;
+}
+
+.about-des {
+    margin:2rem;
+    background-color:#ebecf0;
+    border-radius:1%;
+    padding:1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.about-des p {
+    margin-top:1rem;
+}
+
+.about-imggroup {
+    display:none;
+}
+.about-img-slide {
+    background-color:#ebecf0;
+    border-radius:1%;
+    padding:1rem;
+    margin-left:2rem;
+    margin-right: 2rem;
+    margin-bottom:5rem;
+}
 
 
+/*Contact page start here*/
+iframe {
+    max-width:100%;
+}
+.banner-con {
+    background-image: url(../img/7.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 85%;
+    padding-top:6rem;
+    padding-bottom:6rem;
+    text-align:center;
+    border:1px solid black;
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+.banner-con h1 {
+    font-family: 'Roboto Slab', serif;
+    opacity: 100%;
+    color:white;
+}
+.con-h1 {
+    font-family: 'Baloo Tamma 2', cursive;
+    text-align:center;
+    margin-top:3rem;
+}
+.map {
+    border:1px solid black;
+    margin-left: 2rem;
+    margin-right:2rem;
+}
+.con-card {
+    background-color: black;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:1rem;
+    margin:2rem;
+}
+.con-card h3 {
+    text-align: center;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size:2rem;
+}
+.con-info {
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Montserrat', sans-serif;
+}
 
+.contact-form {
+    margin:1rem;
+    padding-top:2rem;
+}
 
+legend {
+    font-family: 'Baloo Tamma 2', cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+
+label {
+    font-size: 1.25rem;
+    margin-bottom:0.5rem;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+fieldset {
+    display: grid;
+}
+
+fieldset input {
+    width:100%;
+    line-height:3rem;
+    font-size:1rem;
+    margin-bottom:1rem;
+    background-color: black;
+    border-radius:10px;
+    border:none;
+    color:white;
+}
+textarea {
+    width:100%;
+    height:150px;
+    font-size:1.1rem;
+    border-radius:10px;
+    background-color: black;
+    line-height:3rem;
+    color:white;
+}
+::placeholder {
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-button {
+    border-radius:10px;
+    background-color: black;
+    color:white;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size:1.25rem;
+    line-height:2.25rem;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top:2rem;
+}
 
 @media (min-width:700px) {
     /*cover page start here*/
@@ -660,6 +831,103 @@ footer p{
         color:#CCDDFF;
         font-family: 'Baloo Tamma 2', cursive;
         margin-top:0.5rem;
+    }
+
+    /*About page start here*/
+    .banner-about {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding:7rem;
+    }
+    .about-sec1 {
+        margin-left:5rem;
+        margin-right:5rem;
+    }
+    .about-img-slide {
+        display:none;
+    }
+    .about-main img {
+        max-width: 100%;
+    }
+    .about-imggroup {
+        margin-left:7rem;
+        margin-right:7rem;
+        margin-top:3rem;
+        margin-bottom:5rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "abimg1 . abimg2"
+        ". abimg3 ."
+        "abimg4 . abimg5";
+    }
+    .ab-p1 {
+        grid-area: abimg1;
+        background-color: #ebecf0;
+        padding:2rem;
+    }
+    .ab-p2 {
+        grid-area: abimg2;
+        background-color: #ebecf0;
+        padding:2rem;
+    }
+    .ab-p3 {
+        grid-area: abimg3;
+        background-color: #ebecf0;
+        padding:2rem;
+    }
+    .ab-p4 {
+        grid-area: abimg4;
+        background-color: #ebecf0;
+        padding:2rem;
+    }
+    .ab-p5 {
+        grid-area: abimg5;
+        background-color: #ebecf0;
+        padding:2rem;
+    }
+    @keyframes grow {
+        100% {
+          transform:scale(1.5);
+        }
+      }
+      .about-imggroup img:active {
+        animation-name: grow;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+      }
+
+    /*contact page start here*/
+    .banner-con {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding:7rem;
+    }
+    .sec-con {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+    .map {
+        flex-basis: 45%;
+        margin:0;
+        margin-right: 0.5rem;
+    }
+    .contact-div {
+        flex-basis: 45%;
+        margin:0;
+        margin-left: 0.5rem;
+    }
+    .con-card {
+        margin:0;
+    }
+    .form {
+        flex-basis: 95%;
     }
 
 
@@ -929,12 +1197,93 @@ footer p{
     .videogroup .btn {
         margin-top: 0;
     }
-    
 
+    /*about page start here*/
+    .banner-about {
+        margin-left: 8rem;
+        margin-right: 8rem;
+        margin-top:2rem;
+    }
+    .about-sec1 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-left:8rem;
+        margin-right:8rem;
+    }
+    .about-sec1 .card {
+        margin-top:2rem;
+        margin-bottom:2rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-sec1 .card .card-body h5 {
+        font-size:1.75rem;
+    }
+    .about-des {
+        font-size:1.25rem;
+        padding-left:3rem;
+        padding-right:3rem;
+    }
+    .about-des p {
+        margin-top:0;
+    }
+    .about-imggroup {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-top:5rem;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "abimg1 . abimg2 . abimg3"
+        ". abimg4 . abimg5 .";
+    }
+    .ab-p1, .ab-p2, .ab-p3, .ab-p4, .ab-p5 {
+        border-radius: 50%;
+    }
+    .ab-p4, .ab-p5 {
+        margin-top:1rem;
+    }
 
-    
-    
-
-
+    /*Contact page start here*/
+    .banner-con {
+        margin-left: 8rem;
+        margin-right: 8rem;
+        margin-top:2rem;
+    }
+    .sec-con {
+        margin-left: 8rem;
+        margin-right: 8rem;
+        margin-bottom:5rem;
+    }
+    .map {
+        flex-basis: 100%;
+        margin-bottom:6rem;
+    }
+    .contact-div {
+        flex-basis: 45%;
+        padding-right:6rem;
+        border-right:0.5px solid black;
+    }
+    .con-card {
+        padding:3rem;
+        margin-top:3rem;
+    }
+    .form {
+        flex-basis: 45%;
+        margin-top:0;
+        padding-left:6rem;
+        border-left:0.5px solid black;
+    }
+    .contact-form {
+        padding:0;
+        margin:0;
+    }
+    fieldset {
+        padding:0;
+    }
+    .form legend {
+        margin-top:0;
+    }
     
 }
