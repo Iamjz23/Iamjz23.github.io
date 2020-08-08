@@ -39,6 +39,90 @@
     color:white;
 }
 
+/*Cover page start here*/
+.cover-body, html {
+    height: 100%;
+    margin: 0;
+  }
+.cover-main {
+    height:100%;
+    background-image: url(../img/cover.jpg);
+    /*image is from unsplash.com https://unsplash.com/photos/hVkDaLkoiec*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cover-main .dropdown-menu {
+    background-color: white;
+}
+.cover-main .dropdown-item {
+    color:black;
+}
+.cover-body header {
+    margin:0;
+}
+.cover-body header img {
+    background-color: white;
+    border-top:3px solid white;
+    border-radius:10%;
+}
+.cover-body header .logo {
+    border:1px solid #B19CD9;
+    margin-top:1rem;
+    border-radius:10%;
+}
+
+#coverslide {
+    margin:3rem; 
+    top:10%;
+}
+#coverslide img {
+    border-radius: 10%;
+}
+#coverslide a:hover,
+#coverslide a:active {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#coverslide h1 {
+    text-align: center;
+    color: #DCFFFB;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.arrow {
+    position: absolute;
+    bottom:0%;
+    color:#FF4500;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+}
+.cover-body footer{
+    margin-top:0;
+}
+.cover-main .arrow a:link,
+.cover-main .arrow a:visited {
+    color:#FF4500;
+}
+
+.cover-main .arrow a:hover,
+.cover-main .arrow a:active {
+    color:#B19CD9;
+}
+
+@keyframes up {
+    50% {
+      transform:translate(0,-15px);
+    }
+  }
+  .arrow {
+    animation-name: up;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
 
 /*Home page start here*/
 .banner-home {
@@ -342,6 +426,13 @@ footer p{
 
 
 @media (min-width:700px) {
+    /*cover page start here*/
+    #coverslide {
+        max-width:50%;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    /*home page start here*/
     .dropdown {
         display:none;
     }
@@ -573,6 +664,14 @@ footer p{
 
 }
 @media (min-width:1200px) {
+    /*cover page start here*/
+    #coverslide {
+        max-width:30%;
+        margin-left: auto;
+        margin-right:auto;
+    }
+
+    /*home page start here*/
     h1 {
         font-size:3rem;
     }
