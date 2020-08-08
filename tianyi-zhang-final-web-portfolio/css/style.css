@@ -74,6 +74,7 @@
 
 #coverslide {
     margin:3rem; 
+    position: relative;
     top:10%;
 }
 #coverslide img {
