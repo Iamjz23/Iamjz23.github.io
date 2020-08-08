@@ -83,9 +83,10 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    color:white;
 }
 .followme p {
-    margin-top:1.5rem;
+    margin-top:1.7rem;
 }
 
 .box-fb {
@@ -286,23 +287,29 @@ footer p{
 .por-group3 {
     margin:1rem;
 }
-.por-group3 p{
+.arth4 {
+    font-family: 'Baloo Tamma 2', cursive;
     text-align: center;
-    padding-left:3rem;
-    padding-right:3rem;
-    margin-top:1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.15rem;
 }
 .art1, .art2, .art3 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin-top:2rem;
 }
 .por-group3 img {
-    max-width: 60%;
+    max-width: 80%;
+    margin-top:2rem;
 }
+.por-group3 .card {
+    background-color: #ebecf0;
+    color:black;
+}
+.por-group3 .card p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom:1.5rem;
+}
+
 .por-group4 .videogroup{
     display:none;
 }
@@ -312,6 +319,7 @@ footer p{
 .card {
     background-color: black;
     color:white;
+    text-align: center;
 }
 .card h5 {
     font-family: 'Baloo Tamma 2', cursive;
@@ -323,7 +331,6 @@ footer p{
 .card-body .btn {
     background-color: #FFEFFF;
     color: #FF4500;
-    text-align: center;
 }
 .portfolio-body footer {
     margin-top:5rem;
@@ -489,29 +496,35 @@ footer p{
     .imggroup .img7, .imggroup .img8 {
         border-right: 1px solid black;
     }
+    @keyframes grow {
+        100% {
+          transform:scale(1.5);
+        }
+      }
+      .imggroup img:active {
+        animation-name: grow;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+      }
+    
     .por-group3 {
         margin-left: 3rem;
         margin-right: 3rem;
-    }
-    .art1, .art2, .art3 {
         display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom:0;
-        margin-top:0;
     }
-    .por-group3 img {
-        margin:0;
-        max-width: 50%;
-    }
-    .art1 img, .art3 img {
-        order:1;
-    }
-    .art1 p, .art2 p, .art3 p {
-        padding-top:2rem;
-    }
-    .art1 {
+    .por-group3 h4 {
         margin-top:2rem;
+        font-size:1.5rem;
+    }
+    .por-group3 .card-body {
+        margin:0;
+        padding:0;
+    }
+
+    .art1 p, .art2 p, .art3 p {
+        font-size:1rem;
+        padding:0;
+        margin:0;
     }
 
     .videomobile {
@@ -519,29 +532,40 @@ footer p{
     }
 
     .por-group4 .videogroup {
-        display: grid;
+        display: flex;
         margin-left: 3rem;
         margin-right: 3rem;
         text-align: center;
+        flex-direction: column;
+    }
+    .v-gp1, .v-gp2, .v-gp3 {
+        display:flex;
+        flex-direction: row;
+    }
+    .v-gp2, .v-gp3 {
+        margin-top:2rem;
+    }
+    .por-group4 h4 {
+        font-family: 'Baloo Tamma 2', cursive;
+        margin-top:1rem;
+    }
+    .v-gp1 img, .v-gp3 img {
+        order:1;
     }
     .videogroup img {
-        margin-top: 2rem;
+        max-width: 50%;
     }
     .videogroup p {
-        padding-left:5rem;
-        padding-right:5rem;
         font-family: 'Montserrat', sans-serif;
-        margin-top:1.5rem;
-        font-size: 1.15rem;
+        font-size: 1rem;
+        margin-left:1.5rem;
+        margin-right:1.5rem;
     }
     .videogroup .btn {
         background-color: black;
         color:#CCDDFF;
         font-family: 'Baloo Tamma 2', cursive;
-        margin-top:1.5rem;
-    }
-    .v-gp2, .v-gp3 {
-        margin-top:2rem;
+        margin-top:0.5rem;
     }
 
 
@@ -757,10 +781,14 @@ footer p{
         order:0;
         margin-top:1rem;
         padding:0;
+        max-width:80%;
     }
     .art1, .art2, .art3 {
         flex-direction: column;
         margin-top:0;
+    }
+    .por-group3 p {
+        padding-top:0;
     }
     
     .por-group4 .videogroup {
@@ -774,23 +802,33 @@ footer p{
         "v1 v2 v3"
         "v1 . v3";
     }
+    .videogroup img {
+        order:0;
+        max-width:100%;
+    }
     .v-gp1 {
         grid-area: v1;
-        margin-top: 1rem;
+        flex-direction: column;
+        margin-top:2.25rem;
     }
     .v-gp2 {
         grid-area: v2;
+        flex-direction: column;
     }
     .v-gp3 {
         grid-area: v3;
-        margin-top: 1rem;
+        flex-direction: column;
+        margin-top:2.25rem;
+    }
+    .videogroup h4 {
+        margin-bottom:0;
     }
     .videogroup p {
-        padding:1rem;
     }
     .videogroup .btn {
         margin-top: 0;
     }
+    
 
 
     
