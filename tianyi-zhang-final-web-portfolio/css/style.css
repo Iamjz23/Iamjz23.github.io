@@ -889,7 +889,7 @@ textarea {
     }
     @keyframes grow {
         100% {
-          transform:scale(1.5);
+          transform:scale(2);
         }
       }
       .about-imggroup img:active {
@@ -1227,6 +1227,7 @@ textarea {
     }
     .about-des p {
         margin-top:0;
+
     }
     .about-imggroup {
         margin-left: 10rem;
