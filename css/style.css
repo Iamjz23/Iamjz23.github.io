@@ -1047,7 +1047,7 @@ textarea {
     .sec4, .sec5, .sec6 {
         display: flex;
         flex-wrap: wrap;
-        flex-basis: 33%;
+        flex-basis: 33.33%;
         margin-top:5rem;
     }
     .sec4 img, .sec5 img, .sec6 img {
