@@ -675,6 +675,7 @@ textarea {
     }
     .home-section img {
         max-width: 45%;
+        margin-top:2rem;
     }/*I set the image width smaller because I have the text and the image on the same line, and I want the height of the image to match the text content.*/
 
     .sec1, .sec2, .sec3, .sec4, .sec5, .sec6 {
@@ -689,7 +690,7 @@ textarea {
     }/*I used order to make the image display on the right side.*/
 
     .s1-content, .s2-content, .s3-content, .s4-content, .s5-content, .s6-content {
-        margin-top:1rem;
+        margin-top:2rem;
         padding-left:2em;
         padding-right:2rem;
     }
@@ -1048,7 +1049,7 @@ textarea {
         display: flex;
         flex-wrap: wrap;
         flex-basis: 33.33%;
-        margin-top:5rem;
+        margin-top:3rem;
     }
     .sec4 img, .sec5 img, .sec6 img {
         max-width:100%;
