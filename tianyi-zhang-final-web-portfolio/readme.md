@@ -12,3 +12,4 @@ References:
 4. Center dropdown menu from Stackflow (I learned to add !important to make it work, but I styled the menu myself.): https://stackoverflow.com/questions/38419705/position-dropdown-button-and-dropdown-menu-in-center
 5. The background image on the cover page is from unsplah.com: https://unsplash.com/photos/hVkDaLkoiec
 6. Google map: https://www.google.com/maps?ll=45.349985,-75.756048&z=11&t=m&hl=en&gl=CA&mapclient=embed&daddr=Algonquin+College+of+Applied+Arts+and+Technology+1385+Woodroffe+Ave+Nepean,+ON+K2G+1V8@45.3499854,-75.7560477
+7. Normalize css from necolas.github: http://necolas.github.io/normalize.css/
