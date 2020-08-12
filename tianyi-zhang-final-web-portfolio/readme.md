@@ -15,3 +15,4 @@ References:
 6. Google map: https://www.google.com/maps?ll=45.349985,-75.756048&z=11&t=m&hl=en&gl=CA&mapclient=embed&daddr=Algonquin+College+of+Applied+Arts+and+Technology+1385+Woodroffe+Ave+Nepean,+ON+K2G+1V8@45.3499854,-75.7560477
 7. Normalize css from necolas.github: http://necolas.github.io/normalize.css/
 8. Fonts I chose are from Google fonts, my font choices are: "Baloo Tamma 2, Montserrat, Roboto Slab": https://fonts.google.com/specimen/Baloo+Tamma+2?sidebar.open=true&selection.family=Baloo+Tamma+2:wght@500|Montserrat:wght@300|Roboto+Slab:wght@500#standard-styles
+9. I learned to use the code "::placeholder" to style the placeholder from W3School: https://www.w3schools.com/howto/howto_css_placeholder.asp
