@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Montserrat:wght@300&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 
-
+    <!--This is the portfolio page-->
     <title>Jz Creative Company-Home</title>
 </head>
 <body class="portfolio-body">
@@ -38,7 +38,7 @@
 			<div class="contact"><a href="contact.html">Contact</a></div>
         </nav>
     </header>
-    <main class="portfolio-main">
+    <main class="portfolio-main"><!--This is the main banner.-->
         <div class="banner-portfolio">
             <h1>My Portfolio</h1>
         </div>
@@ -51,8 +51,8 @@
                 <a class="box-li" href="#"><img src="img/icons/linkedin.svg" alt="linkedin"></a>
             </div>
         </div>
-        <section class="por-section">
-            <div class="por-group1">
+        <section class="por-section"><!--this is the main section of the page-->
+            <div class="por-group1"><!--Group 1 is overview of my works, I have separate div just to easier to aply grid or flex.-->
                 <div class="laptop">
                     <img src="img/22.jpg" alt="Macbook">
                     <p>
@@ -73,8 +73,8 @@
                 </div>
             </div>
             <h2 class="por-h2">Photography</h2>
-            <div class="por-group2">
-                <div class="slideshow">
+            <div class="por-group2"><!--I have the h2 outside the div so it won't effec the grid style.-->
+                <div class="slideshow"><!--I used this slide show frame from Bootstrap, and I ony used it for the mobile view, just to save some space, because I have lots of pictures here.-->
                     <div id="mobileslideshow" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -115,7 +115,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="imggroup">
+                <div class="imggroup"><!--These are the same picture but for desktop and tablet view, I used grid to style them.-->
                     <img class="img1" src="img/14.jpg" alt="ottawa">
                     <img class="img2" src="img/15.jpg" alt="charlottetown">
                     <img class="img3" src="img/16.jpg" alt="queen">
@@ -128,8 +128,8 @@
                 </div>
             </div>
             <h2 class="por-h2">Artworks</h2>
-            <div class="por-group3">
-                <div class="art1 card">
+            <div class="por-group3"><!--These are all the graphics I designed myself-->
+                <div class="art1 card"><!--I used card from Bootstrap to display all the content, becasue it contains both image and text. https://getbootstrap.com/docs/4.5/components/card/-->
                     <img class="card-img-top mx-auto" src="img/logo/g2.jpg" alt="face">
                     <div class="card-body">
                         <h4 class="arth4">Graphic 1</h4>
@@ -153,12 +153,12 @@
                 
             </div>
             <h2 class="por-h2">Videography</h2>
-            <div class="por-group4">
-                <div class="videomobile">
+            <div class="por-group4"><!--These are my videos-->
+                <div class="videomobile"><!--I used slide show from Bootstrap to display the videos just to save more space.-->
                     <div id="videoslide" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="card">
+                                <div class="card"><!--Instead of image with text showed on the Bootstrap, I swapped out them with card, because card is better for displaying information.-->
                                     <img class="card-img-top" src="img/23.jpg" alt="Finger dance">
                                     <div class="card-body">
                                         <h5 class="card-title">Finger Dance</h5>
@@ -198,13 +198,13 @@
                         </a>
                     </div>
                 </div>
-                <div class="videogroup">
+                <div class="videogroup"><!--I used normal html and css for display the content on tablet and desktop view.-->
                     <div class="v-gp1">
                         <img class="v-img1" src="img/23.jpg" alt="Finger dance">
                         <div class="v-content-group1">
                             <h4>Finger Dance</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nobis quidem assumenda nesciunt animi ex autem, saepe earum atque pariatur ullam illo.</p>
-                            <a class="btn" href="#">Check Out the Video</a>
+                            <a class="btn" href="#">Check Out the Video</a><!--I used "btn" from Bootstrap to make it a button.-->
                         </div>
                     </div>
                     <div class="v-gp2">
@@ -259,3 +259,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
+<!--The codes are validated from html validator.-->

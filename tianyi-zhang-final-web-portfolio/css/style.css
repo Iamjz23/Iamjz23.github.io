@@ -1,13 +1,18 @@
 *{
     box-sizing: border-box;
-}
+}/*I added a border-box here so the padding will only effect the space in a div.*/
+
+/*Mobile view start here.*/
 .header {
     display: grid;
     margin:1rem;
 }
+/*I used grid to style the header, because it automately add space between*/
+
 .headernav {
     display: none;
-}
+}/*becasue on the mobile view I want to show the dropdown menu from bootstrap, so I made the header nav disapper.*/
+
 .header a .logoimg {
     width:100px;
 }
@@ -57,6 +62,8 @@
 .cover-main .dropdown-menu {
     background-color: white;
 }
+/*I changed the menu background color to white so is easier to see.*/
+
 .cover-main .dropdown-item {
     color:black;
 }
@@ -72,7 +79,7 @@
     border:1px solid #B19CD9;
     margin-top:1rem;
     border-radius:10%;
-}
+}/*I chose this light purple to match the background image.*/
 
 #coverslide {
     margin:3rem; 
@@ -81,7 +88,8 @@
 }
 #coverslide img {
     border-radius: 35px;
-}
+}/*I added a curve to the image just to make it look nicer.*/
+
 #coverslide a:hover,
 #coverslide a:active {
     text-decoration: none;
@@ -126,20 +134,22 @@
     animation-duration: 1s;
     animation-iteration-count: infinite;
   }
+/*I added a animation here so the end user will notice this button, becaue it's small and on the bottom of the page,this.*/
 
 /*Home page start here*/
 .banner-home {
     background-image: url(../img/9.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    opacity: 85%;
+    opacity: 85%;/*I made the opacity of the image to 85% so it's easier to read the text.*/
     padding-top:6rem;
     padding-bottom:6rem;
     text-align:center;
     border:1px solid black;
     margin-left:1rem;
     margin-right: 1rem;
-}
+}/*This is the top banner, I added lots of padding because there's only one line of text, but I want to have more space.*/
+
 .banner-home h1 {
     font-family: 'Roboto Slab', serif;
     opacity: 100%;
@@ -149,7 +159,8 @@
     display:flex;
     margin-top:2rem;
     margin-bottom:2rem;
-}
+}/*I added a display flex so I can center the social media icons group.*/
+
 .home-social {
     justify-content: center;
     display:grid;
@@ -160,7 +171,7 @@
     ". a ."
     "b c d"
     ". e .";
-}
+}/*I used grid area to style it, it's easier to do.*/
 
 .followme {
     grid-area:a;
@@ -208,6 +219,8 @@
     display: flex;
     justify-content: center;
 }
+/*I chose bright and neon colors for these 5 boxes just to make the website look more stylish and interesting.*/
+
 hr {
     margin:1rem;
     background-color:#d4af37
@@ -248,7 +261,7 @@ hr {
     font-family: 'Baloo Tamma 2', cursive;
     font-weight: bold;
     color:#FF4500;
-}
+}/*I used this lava orange for the link color so it's more obvious.*/
 
 
 footer {
@@ -297,7 +310,8 @@ footer {
     float:right;
     margin-right:1rem;
     margin-top:-1rem;
-}
+}/*I added a negative margin on top because I want the gototop button more close to the top, and separate it from rest of the footer content.*/
+
 .gototop a:link,
 .gototop a:visited {
     color:#d4af37;
@@ -316,7 +330,7 @@ footer p{
     background-image: url(../img/21.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    opacity: 85%;
+    opacity: 85%;/*I made the opacity of the image to 85% so it's easier to read the text.*/
     padding-top:6rem;
     padding-bottom:6rem;
     text-align:center;
@@ -344,7 +358,8 @@ footer p{
     ". a ."
     "b c d"
     ". e .";
-}
+}/*Again, I used grid area to style it, because grid area is easier to style a more complicate grid layout.*/
+
 .por-group1 {
     margin:1rem;
 }
@@ -360,7 +375,7 @@ footer p{
 
 .por-group2 .imggroup {
     display: none;
-}
+}/*I made the image group disapper becasue I used slideshow from Bootstrap on the mobile view instead, it saves more space.*/
 
 .por-section h2 {
     font-family: 'Baloo Tamma 2', cursive;
@@ -386,7 +401,8 @@ footer p{
 .por-group3 img {
     max-width: 80%;
     margin-top:2rem;
-}
+}/*I set the image width to 80% max, becasue the image is too big on mobile view.*/
+
 .por-group3 .card {
     background-color: #ebecf0;
     color:black;
@@ -399,7 +415,8 @@ footer p{
 
 .por-group4 .videogroup{
     display:none;
-}
+}/*Again, I have it not displayed because I used slideshow feture from bootstrap just to save some space, also made the website more functional.*/
+
 .por-group4 {
     margin:1rem;
 }
@@ -457,21 +474,27 @@ footer p{
     color:black;
     text-align: center;
     border:none;
-}
+}/*I used this light grey to divide different sections of the page.*/
+
 .about-sec1 .card .card-body {
     margin-top:1rem;
 }
 .about-sec1 .card .card-body h5 {
     font-size:1.5rem;
 }
-
+.about-des h3 {
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 2rem;
+    text-align:center;
+}
 .about-des {
     margin:2rem;
     background-color:#ebecf0;
     border-radius:1%;
     padding:1.5rem;
     font-family: 'Montserrat', sans-serif;
-}
+}/*I used this light grey to divide different sections of the page.*/
+
 .about-des p {
     margin-top:1rem;
 }
@@ -486,7 +509,7 @@ footer p{
     margin-left:2rem;
     margin-right: 2rem;
     margin-bottom:5rem;
-}
+}/*I used this light grey to divide different sections of the page.*/
 
 
 /*Contact page start here*/
@@ -528,7 +551,8 @@ iframe {
     justify-content: center;
     padding:1rem;
     margin:2rem;
-}
+}/*I have the background color in black because it loos more professional.*/
+
 .con-card h3 {
     text-align: center;
     font-family: 'Baloo Tamma 2', cursive;
@@ -597,6 +621,7 @@ textarea {
     margin-top:2rem;
 }
 
+/*Tablet view start here.*/
 @media (min-width:700px) {
     /*cover page start here*/
     #coverslide {
@@ -607,7 +632,8 @@ textarea {
     /*home page start here*/
     .dropdown {
         display:none;
-    }
+    }/*I hided the dropdown menu to show the regular navigation.*/
+
     .headernav {
         display:inline-block;
         display:flex;
@@ -649,16 +675,19 @@ textarea {
     }
     .home-section img {
         max-width: 45%;
-    }
+    }/*I set the image width smaller because I have the text and the image on the same line, and I want the height of the image to match the text content.*/
+
     .sec1, .sec2, .sec3, .sec4, .sec5, .sec6 {
         display:flex;
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 3rem;
-    }
+    }/*I used flex to style the layout.*/
+
     .sec2 img, .sec4 img, .sec6 img {
         order:1;
-    }
+    }/*I used order to make the image display on the right side.*/
+
     .s1-content, .s2-content, .s3-content, .s4-content, .s5-content, .s6-content {
         margin-top:1rem;
     }
@@ -667,6 +696,7 @@ textarea {
         grid-template-columns: repeat(2,1fr);
     }
     /*I used grid to align the footer.*/
+
     .footernav {
         flex-direction: column;
         line-height: 2rem;
@@ -716,14 +746,16 @@ textarea {
     .por-group1 img {
         max-width: 50%;
         margin-top:0;
-    }
+    }/*I set the width smaller just to match the height of the text.*/
+
     .laptop, .video, .gp1-portrait {
         display:flex;
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 3rem;
         margin-top:-3rem;
-    }
+    }/*I used grid to style the layout.*/
+
     .video img {
         order:1;
     }
@@ -736,7 +768,8 @@ textarea {
     
     .por-group2 .slideshow {
         display: none;
-    }
+    }/*I hided the slideshow so I can expand the image group.*/
+
     .por-group2 .imggroup {
         margin-left: 3rem;
         margin-right: 3rem;
@@ -769,12 +802,14 @@ textarea {
         animation-duration: 1s;
         animation-iteration-count: 1;
       }
-    
+    /*I added a animation here becasue with the grid layout, the images are a bit too small, so when you are clicking on the image, it will grow.*/
+
     .por-group3 {
         margin-left: 3rem;
         margin-right: 3rem;
         display:flex;
-    }
+    }/*I used flex here, because flex automately display the content horizontally.*/
+
     .por-group3 h4 {
         margin-top:2rem;
         font-size:1.5rem;
@@ -794,7 +829,7 @@ textarea {
     }
     .videomobile {
         display: none;
-    }
+    }/*I hided the Bootstrap slideshow to expand the content.*/
 
     .por-group4 .videogroup {
         display: flex;
@@ -816,7 +851,8 @@ textarea {
     }
     .v-gp1 img, .v-gp3 img {
         order:1;
-    }
+    }/*I used flex and order to style the layout because it's easier than grid.*/
+
     .videogroup img {
         max-width: 50%;
     }
@@ -845,7 +881,8 @@ textarea {
     }
     .about-img-slide {
         display:none;
-    }
+    }/*I hided the Bootstrap slideshow to expand the images content.*/
+
     .about-main img {
         max-width: 100%;
     }
@@ -861,7 +898,8 @@ textarea {
         "abimg1 . abimg2"
         ". abimg3 ."
         "abimg4 . abimg5";
-    }
+    }/*I used grid area, because it's easier to deal with complacated layout.*/
+
     .ab-p1 {
         grid-area: abimg1;
         background-color: #ebecf0;
@@ -887,6 +925,8 @@ textarea {
         background-color: #ebecf0;
         padding:2rem;
     }
+    /*I add a background color just to match the content on the first haf of the page, and also add more style to it.*/
+
     @keyframes grow {
         100% {
           transform:scale(2);
@@ -896,7 +936,8 @@ textarea {
         animation-name: grow;
         animation-duration: 1s;
         animation-iteration-count: 1;
-      }
+      }/*I added a grow animation so the user can see the image bigger and more clear.*/
+
 
     /*contact page start here*/
     .banner-con {
@@ -929,9 +970,9 @@ textarea {
     .form {
         flex-basis: 95%;
     }
-
-
 }
+
+/*Desktop view start here.*/
 @media (min-width:1200px) {
     /*cover page start here*/
     #coverslide {
@@ -947,7 +988,8 @@ textarea {
     .header {
         display:flex;
         justify-content: space-between;
-    }
+    }/*I used flex to style header navigation, I used space between to make the content on two ends.*/
+
     .header a {
         margin:0;
         margin-left:3rem;
@@ -976,7 +1018,7 @@ textarea {
         animation-name:hover;
         animation-duration: 0.7s;
         animation-iteration-count: infinite; 
-      }
+      }/*I added a animation here, where you hover your mouse on one of these boxes, it will go up and down, just to make the website more interesting and more functional.*/
 
     .home-body hr {
         margin-left: 8rem;
@@ -998,7 +1040,8 @@ textarea {
         display: inline-block;
         flex-basis: 100%;
         margin:0;
-    }
+    }/*I made the hr appear just to divide the bottom section from the top.*/
+
     .sec4, .sec5, .sec6 {
         display: flex;
         flex-wrap: wrap;
@@ -1023,7 +1066,7 @@ textarea {
         animation-name: up;
         animation-duration: 1s;
         animation-iteration-count: infinite;
-      }
+      }/*I added a animation on the gototop button, so the end user will notice this feature, since it's on the bottom of the page, and it's small.*/
 
     
     /*portfolio page start here*/
@@ -1058,7 +1101,8 @@ textarea {
         "lt . pt"
         "lt vd pt"
         ". vd .";
-    }
+    }/*I used grid area because the way I'm setting up the layout, grid area is easier to style it.*/
+
     .laptop {
         grid-area:lt;
     }
@@ -1110,7 +1154,7 @@ textarea {
         "p4 . p5 . p6"
         ". p7 . p8 ."
         ". . p9 . .";
-    }
+    }/*I used grid area to style it, becasue one piece of code is enough, and I want to add more style on the portfolio page.*/
 
     .img1 {
         grid-area: p1;
@@ -1171,7 +1215,8 @@ textarea {
         ". v2 ."
         "v1 v2 v3"
         "v1 . v3";
-    }
+    }/*This layout is matching the first group at the top, just to add mroe style.*/
+
     .videogroup img {
         order:0;
         max-width:100%;
@@ -1241,7 +1286,8 @@ textarea {
     }
     .ab-p1, .ab-p2, .ab-p3, .ab-p4, .ab-p5 {
         border-radius: 50%;
-    }
+    }/*I made the pictues round becasue it's more stylish, and I want to make it look like a image wall, and the grey background color it's like a image frame.*/
+
     .ab-p4, .ab-p5 {
         margin-top:1rem;
     }
@@ -1265,7 +1311,8 @@ textarea {
         flex-basis: 45%;
         padding-right:6rem;
         border-right:0.5px solid black;
-    }
+    }/*I used flex basis to style the layout on how much space each item need to take.*/
+
     .con-card {
         padding:3rem;
         margin-top:3rem;
@@ -1275,7 +1322,8 @@ textarea {
         margin-top:0;
         padding-left:6rem;
         border-left:0.5px solid black;
-    }
+    }/*I used flex basis to style the layout on how much space each item need to take.*/
+
     .contact-form {
         padding:0;
         margin:0;
@@ -1288,3 +1336,4 @@ textarea {
     }
     
 }
+/*The css code are validated from css validator.*/

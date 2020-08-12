@@ -11,11 +11,12 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Montserrat:wght@300&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 
+    <!--This is the cover page-->
     <title>Jz Creative Company-Cover</title>
   </head>
   <body class="cover-body">
     <section class="cover-main">
-      <header class="header">
+      <header class="header"><!--I put the navigation inside the body part so the background image could go all the way up, and won't affect the footer.-->
 	    	<a href="index.html" class="logo">
           <img src="img/logo/logo.png" alt="logo" class="logoimg">
         </a>
@@ -29,7 +30,7 @@
             <a class="dropdown-item" href="about.html">About</a>
             <a class="dropdown-item" href="contact.html">Contact</a>
           </div>
-        </div>
+        </div><!--This is the dropdown menu I learned from bootstrap, i only used it for the mobile view, and used normal navigation on both tablet and desktop view. https://getbootstrap.com/docs/4.5/components/dropdowns/-->
 		    <nav class="headernav">
           <div class="home"><a href="home.html">Home</a></div>
           <div class="portfolio"><a href="portfolio.html">Portfolio</a></div>
@@ -39,7 +40,7 @@
       </header>
     
       <div id="coverslide" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner"><!--I used this slideshow from bottstrap just to display some of the photos I shoot, https://getbootstrap.com/docs/4.5/components/carousel/-->
           <div class="carousel-item active">
             <img class="d-block w-100" src="img/7.jpg" alt="neon">
           </div>
@@ -78,12 +79,12 @@
           </div>
         </div>
         <a href="home.html"><h1>Welcome to My Website</h1></a>
-      </div>
+      </div><!--This is link to the home page.-->
       
     </section>
     <div class="arrow">
       <a href="home.html">&#65086;</a>
-    </div>
+    </div><!--I have the button link to the home page.-->
     <footer><!--this is the footer-->
       <nav class="footernav">
         <div class="home"><a href="home.html">Home</a></div>
@@ -91,12 +92,12 @@
         <div class="about"><a href="about.html">About</a></div>
         <div class="contact"><a href="contact.html">Contact</a></div>
       </nav>
-      <div class="footer-p2">
+      <div class="footer-p2"><!--I put the social media icon and the goto top button inside one div because i want to move both things to right side on tablet and desktop view, and this div will make it easier.-->
         <div class="gototop"><!--this is the go to top button-->
           <a href="#top">&#8679;</a>
         </div>
         <div class="footer-social">
-          <p>Follow me</p>
+          <p>Follow me</p><!--I put these social media icons inside a div just for apply the grid easier.-->
           <div class="footer-icon">
             <a href="#"><img class="ig" src="img/icons/instagram.svg" alt="instagram"></a>
             <a href="#"><img class="tw" src="img/icons/twitter.svg" alt="twitter"></a>
@@ -115,3 +116,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
+<!--The codes are validated from html validator.-->

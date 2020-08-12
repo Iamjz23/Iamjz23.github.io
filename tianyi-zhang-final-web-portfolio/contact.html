@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Montserrat:wght@300&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 
-
+    <!--This is the contact page-->
     <title>Jz Creative Company-Home</title>
 </head>
 <body>
@@ -44,11 +44,11 @@
         </div>
         <h1 class="con-h1">Contact</h1>
         <section class="sec-con">
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89605.1521699233!2d-75.68706025584979!3d45.426255660189874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04540b77e3bb%3A0x9e246d934b6c6ed!2sAlgonquin%20College%20of%20Applied%20Arts%20and%20Technology!5e0!3m2!1sen!2sca!4v1596914825270!5m2!1sen!2sca" width="2000" height="350" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="map"><!--This is google map, I used it becasue it's easier for the end user to find my location.-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89605.1521699233!2d-75.68706025584979!3d45.426255660189874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04540b77e3bb%3A0x9e246d934b6c6ed!2sAlgonquin%20College%20of%20Applied%20Arts%20and%20Technology!5e0!3m2!1sen!2sca!4v1596914825270!5m2!1sen!2sca" width="2000" height="350" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><!--There was a frameborder tag inside which came with the copied code from google map, but html validator said I shouldn't have frameborder in set iframe, so I just deleted it.-->
             </div>
-            <div class="contact-div">
-                <div class="con-card">
+            <div class="contact-div"><!--I have another div because it's easier to spacing on the desktop view, to use padding to spacing between.-->
+                <div class="con-card"><!--This is a the contact card.-->
                     <h3>Contact Card</h3>
                     <div class="con-info">
                         <p>Name: Tianyi Zhang</p>
@@ -58,10 +58,10 @@
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit 1</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ottawa, ON</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K1K1K1</p>
-                    </div>
+                    </div><!--I used lots of &nbsp; for space to have these on the same verticle line with the first line of the address.-->
                 </div>
             </div>
-            <div class="form">
+            <div class="form"><!--This is the contact form-->
                 <form class="contact-form">
                     <fieldset>
                         <legend>Contact Me</legend>
@@ -69,7 +69,7 @@
                         <input class="contact-form-input" type="text" id="name" placeholder="   Name" name="name">
                         <label for="email">E-mail</label>
                         <input class="contact-form-input" type="text" id="email" placeholder="   Email address" name="email">
-                    </fieldset>
+                    </fieldset><!--I used space before the text in the placeholder just to have some space between the border and the text, because I added a border radius to the border, and te text were coming out of the border.-->
                     <fieldset>
                         <div class="textarea">
                             <label>Tell Us More&nbsp;</label>
@@ -114,3 +114,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
+<!--The codes are validated from html validator.-->

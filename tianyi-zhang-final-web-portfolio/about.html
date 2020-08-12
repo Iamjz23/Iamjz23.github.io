@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Montserrat:wght@300&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 
-
+    <!--this is the about page-->
     <title>Jz Creative Company-Home</title>
 </head>
 <body>
@@ -43,19 +43,20 @@
             <h1>About me</h1>
         </div>
         <h1>About me</h1>
-        <section class="about-sec1">
-            <div class="card">
+        <section class="about-sec1"><!--This is the first section, which is my bio and my profile.-->
+            <div class="card"><!--I used card feature from Bootstrap to display my profile, it contains a image, and I can add a quote into it.-->
                 <img src="img/me/p5.jpg" class="card-img-top" alt="tianyi 1">
                 <div class="card-body">
                     <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
                 </div>
             </div>
-            <div class="about-des">
+            <div class="about-des"><!--This is the bio of me, I have it in a separate div just to apply div easier.-->
+                <h3>Tianyi Zhang</h3>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini m veniam, quis nostrud exercitation ullamco lab oris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vo lupta ate velit esse cillum dolore eu fugiat nulla pariat ur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum lorem.”</p>
             </div>
         </section>
-        <div>
-            <div class="about-img-slide">
+        <div><!--This section is more of my pictures, I didn't use section, and used div instead because when I was validating my code, it showed I should have a h inside the section to state it, so I just used div instead.-->
+            <div class="about-img-slide"><!--I used the carousel feature from Bootstrap to display my pictures just to save more space on the mobile view-->
                 <div id="about-imgs" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -84,7 +85,7 @@
                     </a>
                 </div>
             </div>
-            <div class="about-imggroup">
+            <div class="about-imggroup"><!--These are same images, just for the tablet and desktop view.-->
                 <img src="img/me/p2.jpg" alt="Tianyi 1" class="ab-p1">
                 <img src="img/me/p1.jpg" alt="Tianyi 2" class="ab-p2">
                 <img src="img/me/p3.jpg" alt="Tianyi 3" class="ab-p3">
@@ -124,3 +125,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
+<!--The codes are validated from html validator.-->
