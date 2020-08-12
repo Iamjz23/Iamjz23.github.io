@@ -690,6 +690,8 @@ textarea {
 
     .s1-content, .s2-content, .s3-content, .s4-content, .s5-content, .s6-content {
         margin-top:1rem;
+        padding-left:2em;
+        padding-right:2rem;
     }
     footer {
         display:grid;
@@ -1045,7 +1047,7 @@ textarea {
     .sec4, .sec5, .sec6 {
         display: flex;
         flex-wrap: wrap;
-        flex-basis:33%;
+        flex-basis: 33%;
         margin-top:5rem;
     }
     .sec4 img, .sec5 img, .sec6 img {
